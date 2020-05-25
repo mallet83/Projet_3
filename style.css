@@ -1,0 +1,42 @@
+@media all and (max-width: 900px)
+{
+  body
+  {
+    margin: auto;
+  }
+  header img
+  {
+    width: 50%;
+    height: auto;
+    padding: 5% 20%;
+  }
+  header
+  {
+    background-color: #569c87;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+}
+@media all and (min-width: 900px)
+{
+  body
+  {
+    margin: auto;
+  }
+  header img
+  {
+    width: 50%;
+    height: auto;
+    padding: 5% 20%;
+  }
+  header
+  {
+    background-color: #569c87;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+}
