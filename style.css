@@ -4,6 +4,7 @@
   {
     margin: auto;
   }
+/* <responsive-Header> */
   header img
   {
     width: 50%;
@@ -17,7 +18,7 @@
     margin: auto;
     text-align: center;
   }
-
+/* </responsive-Header> */
 }
 @media all and (min-width: 900px)
 {
@@ -25,6 +26,7 @@
   {
     margin: auto;
   }
+  /* <Header> */
   header img
   {
     width: 50%;
@@ -38,5 +40,5 @@
     margin: auto;
     text-align: center;
   }
-
+/* </Header> */
 }
