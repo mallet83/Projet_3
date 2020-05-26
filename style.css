@@ -1,4 +1,4 @@
-@font-face {
+@font-face: {
   font-family: montserrat;
   src: url(montserrat-regular.ttf); }
 html {
@@ -8,6 +8,37 @@ html {
 
 body {
   margin: auto; }
+
+main {
+  display: flex;
+  flex-wrap: wrap; }
+  main .main__card1 {
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    height: 300px;
+    background-color: red; }
+  main img {
+    width: 20%;
+    margin-bottom: -5%; }
+  main .main__card2 {
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    height: 300px;
+    background-color: blue; }
+  main .main__card3 {
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    height: 300px;
+    background-color: purple; }
+  main .main__card4 {
+    width: 50%;
+    text-align: center;
+    padding-top: 150px;
+    height: 300px;
+    background-color: brown; }
 
 header {
   background-color: #569c87;
