@@ -1,10 +1,27 @@
+$primary-color: #569c87
+$font-color: #fcca45
+@font-face
+  font-family: montserrat
+  src: url(montserrat-regular.ttf)
+html
+  width: 100%
+  height: 100%
+  font-size: 20px
+body
+    margin: auto
+
 header
+  background-color: $primary-color
   text-align: center
-  .header__logo
-    padding: 5% 20%
-    width: 50%
-
-
-    body
-      
-      margin: auto
+  img
+      padding: 5% 20%
+      width: 50%
+footer
+    background-color: $primary-color
+    padding: 3%
+    .footer__contact
+      float: right
+    a
+      color: $font-color
+      font-family: montserrat
+      text-decoration: none
