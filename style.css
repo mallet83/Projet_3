@@ -1,44 +1,9 @@
-@media all and (max-width: 900px)
-{
-  body
-  {
-    margin: auto;
-  }
-/* <responsive-Header> */
-  header img
-  {
-    width: 50%;
-    height: auto;
+header {
+  text-align: center; }
+  header .header__logo {
     padding: 5% 20%;
-  }
-  header
-  {
-    background-color: #569c87;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-/* </responsive-Header> */
-}
-@media all and (min-width: 900px)
-{
-  body
-  {
-    margin: auto;
-  }
-  /* <Header> */
-  header img
-  {
-    width: 50%;
-    height: auto;
-    padding: 5% 20%;
-  }
-  header
-  {
-    background-color: #569c87;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-  }
-/* </Header> */
-}
+    width: 50%; }
+    header .header__logo body {
+      margin: auto; }
+
+/*# sourceMappingURL=style.css.map */
