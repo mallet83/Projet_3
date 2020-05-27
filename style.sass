@@ -1,8 +1,33 @@
-$primary-color: #569c87
-$font-color: #fcca45
-@font-face:
-  font-family: montserrat
+@font-face
+  font-family: 'babiol'
+  src: url(babie___.ttf)
+@font-face
+  font-family: 'montserrat'
   src: url(montserrat-regular.ttf)
+@font-face
+  font-family: 'croissantone-regular'
+  src: url(croissantone-regular.ttf)
+$site-color: #569c87
+$site-font-color: #fcca45
+@mixin card1_properties
+  font-family: 'babiol'
+  background-color: #fcdfdb
+  h1
+    font-size: 70px
+  h2
+    font-size: 40px
+    line-height: 10px
+@mixin card2_properties
+  font-family: 'croissantone-regular'
+  background-color: #fff5fe
+  h1
+    font-size: 50px
+  h2
+    font-size: 25px
+@mixin site-theme
+  font-family: 'montserrat'
+  background-color: #569c87
+  color: #fcca45
 @mixin card-properties
   width: 50%
   text-align: center
@@ -11,7 +36,6 @@ $font-color: #fcca45
 html
   width: 100%
   height: 100%
-  font-size: 20px
 body
   margin: auto
 main
@@ -19,13 +43,13 @@ main
   flex-wrap: wrap
   .main__card1
     @include card-properties
-    background-color: red
+    @include card1_properties
   img
     width: 20%
     margin-bottom: -5%
   .main__card2
     @include card-properties
-    background-color: blue
+    @include card2_properties
   .main__card3
     @include card-properties
     background-color: purple
@@ -34,17 +58,16 @@ main
     background-color: brown
   .main--btn
 header
-  background-color: $primary-color
+  background-color: $site-color
   text-align: center
   img
     padding: 5% 20%
     width: 50%
 footer
-    background-color: $primary-color
+    @include site-theme
     padding: 3%
     .footer__contact
       float: right
     a
-      color: $font-color
-      font-family: montserrat
+      color: $site-font-color
       text-decoration: none

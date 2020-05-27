@@ -1,10 +1,15 @@
-@font-face: {
-  font-family: montserrat;
+@font-face {
+  font-family: "babiol";
+  src: url(babie___.ttf); }
+@font-face {
+  font-family: "montserrat";
   src: url(montserrat-regular.ttf); }
+@font-face {
+  font-family: "croissantone-regular";
+  src: url(croissantone-regular.ttf); }
 html {
   width: 100%;
-  height: 100%;
-  font-size: 20px; }
+  height: 100%; }
 
 body {
   margin: auto; }
@@ -17,7 +22,13 @@ main {
     text-align: center;
     padding-top: 150px;
     height: 300px;
-    background-color: red; }
+    font-family: "babiol";
+    background-color: #fcdfdb; }
+    main .main__card1 h1 {
+      font-size: 70px; }
+    main .main__card1 h2 {
+      font-size: 40px;
+      line-height: 10px; }
   main img {
     width: 20%;
     margin-bottom: -5%; }
@@ -26,7 +37,12 @@ main {
     text-align: center;
     padding-top: 150px;
     height: 300px;
-    background-color: blue; }
+    font-family: "croissantone-regular";
+    background-color: #fff5fe; }
+    main .main__card2 h1 {
+      font-size: 50px; }
+    main .main__card2 h2 {
+      font-size: 25px; }
   main .main__card3 {
     width: 50%;
     text-align: center;
@@ -48,13 +64,14 @@ header {
     width: 50%; }
 
 footer {
+  font-family: "montserrat";
   background-color: #569c87;
+  color: #fcca45;
   padding: 3%; }
   footer .footer__contact {
     float: right; }
   footer a {
     color: #fcca45;
-    font-family: montserrat;
     text-decoration: none; }
 
 /*# sourceMappingURL=style.css.map */
