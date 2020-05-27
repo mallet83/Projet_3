@@ -90,4 +90,13 @@ footer {
     color: #fcca45;
     text-decoration: none; }
 
+.main--btn {
+  font-family: "montserrat";
+  background-color: #569c87;
+  color: #fcca45;
+  text-align: center;
+  padding: 3%;
+  margin: 0 auto;
+  font-size: 30px; }
+
 /*# sourceMappingURL=style.css.map */
