@@ -7,6 +7,12 @@
 @font-face
   font-family: 'croissantone-regular'
   src: url(croissantone-regular.ttf)
+@font-face
+  font-family: 'dancingscript'
+  src: url(dancing-script.ttf)
+@font-face
+  font-family: 'kaushanscript-regular'
+  src: url(kaushanscript-regular.ttf)
 $site-color: #569c87
 $site-font-color: #fcca45
 @mixin card1_properties
@@ -24,20 +30,40 @@ $site-font-color: #fcca45
     font-size: 50px
   h2
     font-size: 25px
-@mixin site-theme
-  font-family: 'montserrat'
-  background-color: #569c87
-  color: #fcca45
+@mixin card3_properties
+  font-family: 'dancingscript'
+  background-color: #f9f9f9
+  h1
+    font-size: 60px
+  h2
+    font-size: 35px
+@mixin card4_properties
+  background-color: #fdfffd
+  font-family: 'kaushanscript-regular'
+  h1
+    font-size: 60px
+  h2
+    font-size: 33px
 @mixin card-properties
   width: 50%
   text-align: center
   padding-top: 150px
   height: 300px
+@mixin site-theme
+  font-family: 'montserrat'
+  background-color: #569c87
+  color: #fcca45
 html
   width: 100%
   height: 100%
 body
   margin: auto
+header
+  background-color: $site-color
+  text-align: center
+  img
+    padding: 5% 20%
+    width: 50%
 main
   display: flex
   flex-wrap: wrap
@@ -52,17 +78,11 @@ main
     @include card2_properties
   .main__card3
     @include card-properties
-    background-color: purple
+    @include card3_properties
   .main__card4
     @include card-properties
-    background-color: brown
+    @include card4_properties
   .main--btn
-header
-  background-color: $site-color
-  text-align: center
-  img
-    padding: 5% 20%
-    width: 50%
 footer
     @include site-theme
     padding: 3%
