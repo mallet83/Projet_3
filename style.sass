@@ -15,21 +15,17 @@
   src: url(kaushanscript-regular.ttf)
 $site-color: #569c87
 $site-font-color: #fcca45
+@mixin card-properties
+  width: 50%
+  text-align: center
+  padding-top: 150px
+  height: 300px
 @mixin card1_properties
   font-family: 'babiol'
   background-color: #fcdfdb
-  h1
-    font-size: 70px
-  h2
-    font-size: 40px
-    line-height: 10px
 @mixin card2_properties
   font-family: 'croissantone-regular'
   background-color: #fff5fe
-  h1
-    font-size: 50px
-  h2
-    font-size: 25px
 @mixin card3_properties
   font-family: 'dancingscript'
   background-color: #f9f9f9
@@ -40,15 +36,6 @@ $site-font-color: #fcca45
 @mixin card4_properties
   background-color: #fdfffd
   font-family: 'kaushanscript-regular'
-  h1
-    font-size: 60px
-  h2
-    font-size: 33px
-@mixin card-properties
-  width: 50%
-  text-align: center
-  padding-top: 150px
-  height: 300px
 @mixin site-theme
   font-family: 'montserrat'
   background-color: #569c87
@@ -69,18 +56,36 @@ header
   .main__card1
     @include card-properties
     @include card1_properties
+    h1
+      font-size: 70px
+    h2
+      font-size: 40px
+      line-height: 10px
   img
     width: 20%
     margin-bottom: -5%
   .main__card2
     @include card-properties
     @include card2_properties
+    h1
+      font-size: 50px
+    h2
+      font-size: 25px
   .main__card3
     @include card-properties
     @include card3_properties
+    h1
+      font-size: 60px
+    h2
+      font-size: 33px
   .main__card4
     @include card-properties
     @include card4_properties
+    h1
+      font-size: 55px
+      font-weight: lighter
+    h2
+      font-size: 30px
   p
     width: 100%
     height: 30px
@@ -91,6 +96,7 @@ header
     padding: 3% 10% 3% 10%
     font-size: 25px
     border-radius: 8px
+    border: inherit
 footer
     margin: auto
     position: fixed

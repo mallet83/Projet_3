@@ -65,6 +65,10 @@ header {
       font-size: 60px; }
     #main .main__card3 h2 {
       font-size: 35px; }
+    #main .main__card3 h1 {
+      font-size: 60px; }
+    #main .main__card3 h2 {
+      font-size: 33px; }
   #main .main__card4 {
     width: 50%;
     text-align: center;
@@ -73,9 +77,10 @@ header {
     background-color: #fdfffd;
     font-family: "kaushanscript-regular"; }
     #main .main__card4 h1 {
-      font-size: 60px; }
+      font-size: 55px;
+      font-weight: lighter; }
     #main .main__card4 h2 {
-      font-size: 33px; }
+      font-size: 30px; }
   #main p {
     width: 100%;
     height: 30px;
@@ -87,7 +92,8 @@ header {
     color: #fcca45;
     padding: 3% 10% 3% 10%;
     font-size: 25px;
-    border-radius: 8px; }
+    border-radius: 8px;
+    border: inherit; }
 
 footer {
   margin: auto;
