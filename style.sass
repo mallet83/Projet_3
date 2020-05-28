@@ -64,7 +64,7 @@ header
   img
     padding: 5% 20%
     width: 50%
-main
+#main
   display: flex
   flex-wrap: wrap
   .main__card1
@@ -83,17 +83,18 @@ main
     @include card-properties
     @include card4_properties
   .main--btn
-footer
     @include site-theme
+    text-align: center
+    padding: 3%
+    margin: 0 auto
+    font-size: 30px
+footer
+    order: 1
+    @include site-theme
+    width: 100%
     padding: 3%
     .footer__contact
       float: right
     a
       color: $site-font-color
       text-decoration: none
-.main--btn
-  @include site-theme
-  text-align: center
-  padding: 3%
-  margin: 0 auto
-  font-size: 30px
