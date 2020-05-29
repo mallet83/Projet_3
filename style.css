@@ -1,3 +1,6 @@
+html {
+  margin: auto; }
+
 body {
   margin: auto; }
 
@@ -18,10 +21,11 @@ body {
   src: url(kaushanscript-regular.ttf); }
 header {
   background-color: #569c87;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 5%; }
   header img {
     padding: 5% 20%;
-    width: 50%;
+    width: 40%;
     height: 20%; }
 
 #main {
@@ -42,11 +46,10 @@ header {
     #main .main__card1 h1 {
       font-size: 70px; }
     #main .main__card1 h2 {
-      font-size: 40px;
+      font-size: 60px;
       line-height: 10px; }
   #main img {
-    width: 20%;
-    margin-bottom: -5%; }
+    width: 15%; }
   #main .main__card2 {
     width: 40%;
     text-align: center;
@@ -59,9 +62,14 @@ header {
     font-family: "croissantone-regular";
     background-color: #fff5fe; }
     #main .main__card2 h1 {
-      font-size: 50px; }
+      font-size: 50px;
+      color: #c77410; }
     #main .main__card2 h2 {
-      font-size: 25px; }
+      font-size: 35px;
+      background: #c67411;
+      background: linear-gradient(141deg, #c67411 0%, #b7814d 25%, #a56699 50%, #8c5ab0 75%, #6e4ccc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   #main .main__card3 {
     width: 40%;
     text-align: center;
@@ -78,9 +86,14 @@ header {
     #main .main__card3 h2 {
       font-size: 35px; }
     #main .main__card3 h1 {
-      font-size: 60px; }
+      font-size: 70px;
+      color: #0887fb; }
     #main .main__card3 h2 {
-      font-size: 33px; }
+      font-size: 50px;
+      background: #0029dd;
+      background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   #main .main__card4 {
     width: 40%;
     text-align: center;
@@ -93,10 +106,15 @@ header {
     background-color: #fdfffd;
     font-family: "kaushanscript-regular"; }
     #main .main__card4 h1 {
-      font-size: 55px;
-      font-weight: lighter; }
+      font-size: 60px;
+      font-weight: lighter;
+      color: #72bf56; }
     #main .main__card4 h2 {
-      font-size: 30px; }
+      font-size: 50px;
+      background: #5aab48;
+      background: linear-gradient(141deg, #5aab48 0%, #a9ed74 50%, #beff7f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
   #main p {
     width: 100%;
     height: 30px;
@@ -107,21 +125,20 @@ header {
     background-color: #569c87;
     color: #fcca45;
     padding: 3% 10% 3% 10%;
-    font-size: 25px;
+    font-size: 35px;
     border-radius: 8px;
     border: inherit; }
 
 footer {
-  margin: auto;
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 10%;
+  height: 100px;
   font-family: "montserrat";
   background-color: #569c87;
   color: #fcca45;
   width: 100%;
-  font-size: 20px; }
+  font-size: 30px; }
   footer .footer__mention {
     text-decoration-line: none;
     font-family: "montserrat";
