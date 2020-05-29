@@ -1,3 +1,6 @@
+body {
+  margin: auto; }
+
 @font-face {
   font-family: "babiol";
   src: url(babie___.ttf); }
@@ -13,9 +16,6 @@
 @font-face {
   font-family: "kaushanscript-regular";
   src: url(kaushanscript-regular.ttf); }
-body {
-  margin: auto; }
-
 header {
   background-color: #569c87;
   text-align: center; }
@@ -29,10 +29,14 @@ header {
   flex-wrap: wrap;
   height: 100%; }
   #main .main__card1 {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding-top: 150px;
-    height: 300px;
+    padding-top: 200px;
+    height: 400px;
+    margin: 5%;
+    -webkit-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    -moz-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    box-shadow: 0px 0px 16px 0px #4d4d4d;
     font-family: "babiol";
     background-color: #fcdfdb; }
     #main .main__card1 h1 {
@@ -44,10 +48,14 @@ header {
     width: 20%;
     margin-bottom: -5%; }
   #main .main__card2 {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding-top: 150px;
-    height: 300px;
+    padding-top: 200px;
+    height: 400px;
+    margin: 5%;
+    -webkit-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    -moz-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    box-shadow: 0px 0px 16px 0px #4d4d4d;
     font-family: "croissantone-regular";
     background-color: #fff5fe; }
     #main .main__card2 h1 {
@@ -55,10 +63,14 @@ header {
     #main .main__card2 h2 {
       font-size: 25px; }
   #main .main__card3 {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding-top: 150px;
-    height: 300px;
+    padding-top: 200px;
+    height: 400px;
+    margin: 5%;
+    -webkit-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    -moz-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    box-shadow: 0px 0px 16px 0px #4d4d4d;
     font-family: "dancingscript";
     background-color: #f9f9f9; }
     #main .main__card3 h1 {
@@ -70,10 +82,14 @@ header {
     #main .main__card3 h2 {
       font-size: 33px; }
   #main .main__card4 {
-    width: 50%;
+    width: 40%;
     text-align: center;
-    padding-top: 150px;
-    height: 300px;
+    padding-top: 200px;
+    height: 400px;
+    margin: 5%;
+    -webkit-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    -moz-box-shadow: 0px 0px 16px 0px #4d4d4d;
+    box-shadow: 0px 0px 16px 0px #4d4d4d;
     background-color: #fdfffd;
     font-family: "kaushanscript-regular"; }
     #main .main__card4 h1 {

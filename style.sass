@@ -1,3 +1,5 @@
+body
+  margin: auto
 @font-face
   font-family: 'babiol'
   src: url(babie___.ttf)
@@ -16,32 +18,34 @@
 $site-color: #569c87
 $site-font-color: #fcca45
 @mixin card-properties
-  width: 50%
+  width: 40%
   text-align: center
-  padding-top: 150px
-  height: 300px
-@mixin card1_properties
+  padding-top: 200px
+  height: 400px
+  margin: 5%
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(77, 77, 77, 1)
+  -moz-box-shadow: 0px 0px 16px 0px rgba(77, 77, 77, 1)
+  box-shadow: 0px 0px 16px 0px rgba(77, 77, 77, 1)
+@mixin card1_theme
   font-family: 'babiol'
   background-color: #fcdfdb
-@mixin card2_properties
+@mixin card2_theme
   font-family: 'croissantone-regular'
   background-color: #fff5fe
-@mixin card3_properties
+@mixin card3_theme
   font-family: 'dancingscript'
   background-color: #f9f9f9
   h1
     font-size: 60px
   h2
     font-size: 35px
-@mixin card4_properties
+@mixin card4_theme
   background-color: #fdfffd
   font-family: 'kaushanscript-regular'
 @mixin site-theme
   font-family: 'montserrat'
   background-color: #569c87
   color: #fcca45
-body
-  margin: auto
 header
   background-color: $site-color
   text-align: center
@@ -55,7 +59,7 @@ header
   height: 100%
   .main__card1
     @include card-properties
-    @include card1_properties
+    @include card1_theme
     h1
       font-size: 70px
     h2
@@ -66,21 +70,21 @@ header
     margin-bottom: -5%
   .main__card2
     @include card-properties
-    @include card2_properties
+    @include card2_theme
     h1
       font-size: 50px
     h2
       font-size: 25px
   .main__card3
     @include card-properties
-    @include card3_properties
+    @include card3_theme
     h1
       font-size: 60px
     h2
       font-size: 33px
   .main__card4
     @include card-properties
-    @include card4_properties
+    @include card4_theme
     h1
       font-size: 55px
       font-weight: lighter
