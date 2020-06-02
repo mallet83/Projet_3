@@ -1,9 +1,6 @@
-html {
-  margin: inherit;
-  height: auto; }
-
-body {
-  margin: auto; }
+body, html {
+  margin: auto;
+  height: 100%; }
 
 @font-face {
   font-family: "babiol";
@@ -31,11 +28,10 @@ header {
     width: 30%;
     max-height: 100px; }
 
-#main {
+main {
   display: flex;
-  flex-wrap: wrap;
-  align-content: space-between; }
-  #main .main__card1 {
+  flex-wrap: wrap; }
+  main .main__card1 {
     width: 270px;
     text-align: center;
     padding-top: 150px;
@@ -48,14 +44,14 @@ header {
     box-shadow: 0px 0px 7px 11px #f2f2f2;
     font-family: "babiol";
     background-color: #fcdfdb; }
-    #main .main__card1 h1 {
+    main .main__card1 h1 {
       font-size: 50px; }
-    #main .main__card1 h2 {
+    main .main__card1 h2 {
       font-size: 40px;
       line-height: 1px; }
-  #main img {
-    width: 15%; }
-  #main .main__card2 {
+    main .main__card1 img {
+      width: 15%; }
+  main .main__card2 {
     width: 270px;
     text-align: center;
     padding-top: 150px;
@@ -69,16 +65,16 @@ header {
     font-family: "croissantone-regular";
     background-color: #fff5fe;
     white-space: nowrap; }
-    #main .main__card2 h1 {
+    main .main__card2 h1 {
       font-size: 40px;
       color: #c77410; }
-    #main .main__card2 h2 {
+    main .main__card2 h2 {
       font-size: 21px;
       background: #c67411;
       background: linear-gradient(141deg, #c67411 0%, #b7814d 25%, #a56699 50%, #8c5ab0 75%, #6e4ccc 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  #main .main__card3 {
+  main .main__card3 {
     width: 270px;
     text-align: center;
     padding-top: 150px;
@@ -91,20 +87,16 @@ header {
     box-shadow: 0px 0px 7px 11px #f2f2f2;
     font-family: "dancingscript";
     background-color: #f9f9f9; }
-    #main .main__card3 h1 {
-      font-size: 60px; }
-    #main .main__card3 h2 {
-      font-size: 35px; }
-    #main .main__card3 h1 {
+    main .main__card3 h1 {
       font-size: 40px;
       color: #0887fb; }
-    #main .main__card3 h2 {
+    main .main__card3 h2 {
       font-size: 30px;
       background: #0029dd;
       background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  #main .main__card4 {
+  main .main__card4 {
     width: 270px;
     text-align: center;
     padding-top: 150px;
@@ -117,22 +109,22 @@ header {
     box-shadow: 0px 0px 7px 11px #f2f2f2;
     background-color: #fdfffd;
     font-family: "kaushanscript-regular"; }
-    #main .main__card4 h1 {
+    main .main__card4 h1 {
       font-size: 35px;
       font-weight: lighter;
       color: #72bf56; }
-    #main .main__card4 h2 {
+    main .main__card4 h2 {
       font-size: 30px;
       background: #5aab48;
       background: linear-gradient(141deg, #5aab48 0%, #a9ed74 50%, #beff7f 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-  #main p {
+  main p {
     width: 100%;
     height: 30px;
     text-align: center;
     margin-bottom: 14%; }
-  #main .main--btn {
+  main .main--btn {
     font-family: "montserrat";
     background-color: #569c87;
     color: #fcca45;
@@ -149,20 +141,20 @@ footer {
   background-color: #569c87;
   color: #fcca45;
   width: 100%;
-  font-size: 18px;
-  padding: 2%; }
+  font-size: 18px; }
   footer .footer__mention {
+    padding: 2%;
     text-decoration-line: none;
     font-family: "montserrat";
     background-color: #569c87;
     color: #fcca45;
     float: left; }
   footer .footer__contact {
+    padding: 2%;
     text-decoration-line: none;
     font-family: "montserrat";
     background-color: #569c87;
     color: #fcca45;
-    float: right;
-    margin-right: 4%; }
+    float: right; }
 
 /*# sourceMappingURL=style.css.map */
