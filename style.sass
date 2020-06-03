@@ -36,21 +36,24 @@ $site-font-color: #fcca45
     width: 48%
     height: 400px
     padding-top: 200px
+@mixin menu-propeties
+  padding: 5%
+  height: 100%
+  width: 100%
+  h2, h3
+    text-align: center
+  ul
+    padding: 0
+    list-style: none
+  .prix
+    float: right
+    width: 10%
+  .meal
+    float: left
+    width: 88%
 @mixin card1_theme
   font-family: 'babiol'
   background-color: #fcdfdb
-  h1
-    font-size: 50px
-  h2
-    font-size: 40px
-    line-height: 1px
-  @media only screen and (max-width: 1100px) and (min-width: 700px)
-    h1
-      font-size: 60px
-    h2
-      font-size: 50px
-  img
-    width: 15%
 @mixin card2_theme
   font-family: 'croissantone-regular'
   background-color: #fff5fe
@@ -105,6 +108,11 @@ $site-font-color: #fcca45
   font-family: 'montserrat'
   background-color: #569c87
   color: #fcca45
+@mixin button-theme
+  @include site-theme
+  padding: 2% 5% 2% 5%
+  border-radius: 10px
+  border: inherit
 @mixin radient_webkit
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
@@ -126,6 +134,18 @@ main
   .main__card1
     @include card-properties
     @include card1_theme
+    h1
+      font-size: 50px
+    h2
+      font-size: 40px
+      line-height: 1px
+    img
+      width: 15%
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      h1
+        font-size: 60px
+      h2
+        font-size: 50px
   .main__card2
     @include card-properties
     @include card2_theme
@@ -136,26 +156,26 @@ main
     @include card-properties
     @include card4_theme
   .main--btn
-    margin: 1% 30% 9% 30%
-    display: block
-    width: 40%
-    text-align: center
-    @include site-theme
-    padding: 2% 5% 2% 5%
-    font-size: 22px
-    border-radius: 10px
-    border: inherit
+    @media only screen and (min-width: 1100px)
+      @include button-theme
+      @include site-theme
+      width: 40%
+      font-size: 22px
+      margin: 1% 30% 9% 30%
     @media only screen and (max-width: 1100px) and (min-width: 700px)
       font-size: 30px
       margin-bottom: 13%
+      @include button-theme
     @media only screen and (max-width: 700px) and (min-width: 400px)
       font-size: 18px
       width: 50%
       margin-bottom: 15%
-    @media only screen and (max-width: 400px) and (min-width: 300)
+      @include button-theme
+    @media only screen and (max-width: 400px) and (min-width: 300px)
     font-size: 16px
     width: 50%
     margin: 0 25% 15% 25%
+    @include button-theme
 footer
     position: fixed
     bottom: 0
@@ -173,3 +193,33 @@ footer
       padding: 2%
       @include site-theme
       float: right
+/* hypertext */
+.menu__1
+  display: flex
+  flex-direction: column
+  @include card1_theme
+  @include menu-propeties
+  line-height: 40px
+  h2
+    font-size: 50px
+  h3
+    font-size: 35px
+  .header_title
+    padding-top: 30px
+  .note_header
+    display: block
+    margin-left: auto
+    margin-right: auto
+    width: 15%
+  ul
+    font-size: 30px
+  .prix
+    font-weight: bold
+  .footer_title
+    width: 100%
+    height: 300px
+    font-size: 40px
+    font-weight: bold
+    text-align: center
+  .note_footer
+    width: 39px
