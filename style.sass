@@ -1,5 +1,4 @@
-body
-  margin: auto
+/* font */
 a
   text-decoration-line: none
   color: inherit
@@ -20,21 +19,7 @@ a
   src: url(kaushanscript-regular.ttf)
 $site-color: #569c87
 $site-font-color: #fcca45
-@mixin card-properties
-  width: 270px
-  text-align: center
-  padding-top: 150px
-  height: 300px
-  vertical-align: middle
-  margin: auto
-  margin-bottom: 40px
-  -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-  -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-  box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-  @media only screen and (max-width: 1100px) and (min-width: 700px)
-    width: 48%
-    height: 400px
-    padding-top: 200px
+/* style */
 @mixin card1_theme
   font-family: 'babiol'
   background-color: #fcdfdb
@@ -100,18 +85,36 @@ $site-font-color: #fcca45
 @mixin radient_webkit
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
+/* layout */
+body
+    margin: auto
 header
-  margin: inherit
-  background-color: $site-color
-  text-align: center
-  max-height: 150px
-  vertical-align: middle
-  img
-    padding: 2% 20% 2% 20%
-    width: 30%
-    max-height: 100px
-    @media only screen and (max-width: 1100px) and (min-width: 300px)
-      width: 50%
+      margin: inherit
+      background-color: $site-color
+      text-align: center
+      max-height: 150px
+      vertical-align: middle
+      img
+        padding: 2% 20% 2% 20%
+        width: 30%
+        max-height: 100px
+        @media only screen and (max-width: 1100px) and (min-width: 300px)
+          width: 50%
+@mixin card-properties
+            width: 270px
+            text-align: center
+            padding-top: 150px
+            height: 300px
+            vertical-align: middle
+            margin: auto
+            margin-bottom: 40px
+            -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+            -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+            box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+            @media only screen and (max-width: 1100px) and (min-width: 700px)
+              width: 48%
+              height: 400px
+              padding-top: 200px
 main
   margin-top: 5%
   display: flex
@@ -179,6 +182,7 @@ footer
       @include site-theme
       float: right
 /* hypertext */
+/* layout */
 @mixin menu-propeties
   margin: 5% 0% 16% 0%
   -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)

@@ -1,6 +1,4 @@
-body {
-  margin: auto; }
-
+/* font */
 a {
   text-decoration-line: none;
   color: inherit; }
@@ -20,6 +18,11 @@ a {
 @font-face {
   font-family: "kaushanscript-regular";
   src: url(kaushanscript-regular.ttf); }
+/* style */
+/* layout */
+body {
+  margin: auto; }
+
 header {
   margin: inherit;
   background-color: #569c87;
@@ -238,6 +241,7 @@ footer {
     float: right; }
 
 /* hypertext */
+/* layout */
 .menu__1 {
   font-family: "babiol";
   background-color: #fcdfdb;
