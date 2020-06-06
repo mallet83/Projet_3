@@ -81,8 +81,7 @@ main {
     -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
     box-shadow: 0px 0px 7px 11px #f2f2f2;
     font-family: "croissantone-regular";
-    background-color: #fff5fe;
-    white-space: nowrap; }
+    background-color: #fff5fe; }
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
       main .main__card2 {
         width: 48%;
@@ -268,29 +267,13 @@ footer {
     float: right;
     width: 10%;
     text-align: right; }
-    @media only screen and (max-width: 400px) and (min-width: 300px) {
-      .menu__1 .prix {
-        padding-top: 10px; } }
   .menu__1 .meal {
     float: left;
     width: 88%; }
   .menu__1 .title_bar_left {
-    max-width: 25%;
-    float: left;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__1 .title_bar_left {
-        max-width: 35%; } }
-    @media only screen and (min-width: 1100px) {
-      .menu__1 .title_bar_left {
-        max-width: 100%; } }
+    float: left; }
   .menu__1 .title_bar_right {
-    max-width: 25%;
-    float: right;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__1 .title_bar_right {
-        max-width: 35%; } }
+    float: right; }
   @media only screen and (max-width: 1100px) and (min-width: 700px) {
     .menu__1 {
       line-height: 60px; } }
@@ -309,6 +292,21 @@ footer {
     @media only screen and (min-width: 1100px) {
       .menu__1 .note_header {
         width: 10%; } }
+  .menu__1 .title_bar_left {
+    max-width: 25%;
+    padding-top: 12px; }
+    @media only screen and (max-width: 1100px) and (min-width: 700px) {
+      .menu__1 .title_bar_left {
+        max-width: 35%; } }
+    @media only screen and (min-width: 1100px) {
+      .menu__1 .title_bar_left {
+        max-width: 100%; } }
+  .menu__1 .title_bar_right {
+    max-width: 25%;
+    padding-top: 12px; }
+    @media only screen and (max-width: 1100px) and (min-width: 700px) {
+      .menu__1 .title_bar_right {
+        max-width: 35%; } }
   .menu__1 h3 {
     font-size: 35px; }
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
@@ -321,6 +319,9 @@ footer {
         font-size: 30px; } }
   .menu__1 .prix {
     font-weight: bold; }
+    @media only screen and (max-width: 400px) and (min-width: 300px) {
+      .menu__1 .prix {
+        padding-top: 10px; } }
   .menu__1 .dessert {
     text-align: justify; }
   .menu__1 .footer_title {
@@ -337,7 +338,6 @@ footer {
 .menu__2 {
   font-family: "croissantone-regular";
   background-color: #fff5fe;
-  white-space: nowrap;
   margin: 5% 0% 16% 0%;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
@@ -376,29 +376,65 @@ footer {
     float: right;
     width: 10%;
     text-align: right; }
-    @media only screen and (max-width: 400px) and (min-width: 300px) {
-      .menu__2 .prix {
-        padding-top: 10px; } }
   .menu__2 .meal {
     float: left;
     width: 88%; }
   .menu__2 .title_bar_left {
-    max-width: 25%;
-    float: left;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__2 .title_bar_left {
-        max-width: 35%; } }
-    @media only screen and (min-width: 1100px) {
-      .menu__2 .title_bar_left {
-        max-width: 100%; } }
+    float: left; }
   .menu__2 .title_bar_right {
-    max-width: 25%;
-    float: right;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__2 .title_bar_right {
-        max-width: 35%; } }
+    float: right; }
+  .menu__2 h2 {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
+      .menu__2 h2 {
+        font-size: 40px; } }
+  .menu__2 h3 {
+    font-size: 19px; }
+    @media screen and (min-width: 700px) {
+      .menu__2 h3 {
+        margin: 8% 0 3% 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__2 .title_bar_left {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__2 .title_bar_left {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__2 .title_bar_left {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__2 .title_bar_right {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__2 .title_bar_right {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__2 .title_bar_right {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  .menu__2 .entree {
+    color: #c97b1f; }
+  .menu__2 .plat {
+    color: #a96d9d; }
+    @media screen and (min-width: 300px) and (max-width: 400px) {
+      .menu__2 .plat .prix {
+        padding-top: 10px; } }
+  .menu__2 .dessert {
+    color: #7250cd;
+    text-align: justify; }
+  .menu__2 ul {
+    line-height: 40px; }
+    @media screen and (min-width: 700px) and (max-width: 1100px) {
+      .menu__2 ul {
+        line-height: 50px;
+        padding: 0 5% 0 5%; } }
+    @media screen and (min-width: 1100px) {
+      .menu__2 ul {
+        line-height: 60px;
+        padding: 0 7% 0 7%; } }
 
 .menu__3 {
   margin: 5% 0% 16% 0%;
@@ -427,29 +463,13 @@ footer {
     float: right;
     width: 10%;
     text-align: right; }
-    @media only screen and (max-width: 400px) and (min-width: 300px) {
-      .menu__3 .prix {
-        padding-top: 10px; } }
   .menu__3 .meal {
     float: left;
     width: 88%; }
   .menu__3 .title_bar_left {
-    max-width: 25%;
-    float: left;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__3 .title_bar_left {
-        max-width: 35%; } }
-    @media only screen and (min-width: 1100px) {
-      .menu__3 .title_bar_left {
-        max-width: 100%; } }
+    float: left; }
   .menu__3 .title_bar_right {
-    max-width: 25%;
-    float: right;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__3 .title_bar_right {
-        max-width: 35%; } }
+    float: right; }
   .menu__3 h1 {
     font-size: 40px;
     color: #0887fb; }
@@ -464,6 +484,58 @@ footer {
       font-size: 50px; }
     .menu__3 h2 {
       font-size: 40px; } }
+  .menu__3 h2 {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
+      .menu__3 h2 {
+        font-size: 40px; } }
+  .menu__3 h3 {
+    font-size: 19px; }
+    @media screen and (min-width: 700px) {
+      .menu__3 h3 {
+        margin: 8% 0 3% 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__3 .title_bar_left {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__3 .title_bar_left {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__3 .title_bar_left {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__3 .title_bar_right {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__3 .title_bar_right {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__3 .title_bar_right {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  .menu__3 .entree {
+    color: #c97b1f; }
+  .menu__3 .plat {
+    color: #a96d9d; }
+    @media screen and (min-width: 300px) and (max-width: 400px) {
+      .menu__3 .plat .prix {
+        padding-top: 10px; } }
+  .menu__3 .dessert {
+    color: #7250cd;
+    text-align: justify; }
+  .menu__3 ul {
+    line-height: 40px; }
+    @media screen and (min-width: 700px) and (max-width: 1100px) {
+      .menu__3 ul {
+        line-height: 50px;
+        padding: 0 5% 0 5%; } }
+    @media screen and (min-width: 1100px) {
+      .menu__3 ul {
+        line-height: 60px;
+        padding: 0 7% 0 7%; } }
 
 .menu__4 {
   margin: 5% 0% 16% 0%;
@@ -492,29 +564,13 @@ footer {
     float: right;
     width: 10%;
     text-align: right; }
-    @media only screen and (max-width: 400px) and (min-width: 300px) {
-      .menu__4 .prix {
-        padding-top: 10px; } }
   .menu__4 .meal {
     float: left;
     width: 88%; }
   .menu__4 .title_bar_left {
-    max-width: 25%;
-    float: left;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__4 .title_bar_left {
-        max-width: 35%; } }
-    @media only screen and (min-width: 1100px) {
-      .menu__4 .title_bar_left {
-        max-width: 100%; } }
+    float: left; }
   .menu__4 .title_bar_right {
-    max-width: 25%;
-    float: right;
-    padding-top: 12px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__4 .title_bar_right {
-        max-width: 35%; } }
+    float: right; }
   .menu__4 h1 {
     font-size: 35px;
     font-weight: lighter;
@@ -530,5 +586,57 @@ footer {
       font-size: 45px; }
     .menu__4 h2 {
       font-size: 40px; } }
+  .menu__4 h2 {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
+      .menu__4 h2 {
+        font-size: 40px; } }
+  .menu__4 h3 {
+    font-size: 19px; }
+    @media screen and (min-width: 700px) {
+      .menu__4 h3 {
+        margin: 8% 0 3% 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__4 .title_bar_left {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__4 .title_bar_left {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__4 .title_bar_left {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  @media screen and (min-width: 300px) and (max-width: 400px) {
+    .menu__4 .title_bar_right {
+      visibility: hidden; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .menu__4 .title_bar_right {
+      width: 16%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
+    .menu__4 .title_bar_right {
+      width: 30%;
+      padding: 7px 0 0 0; } }
+  .menu__4 .entree {
+    color: #c97b1f; }
+  .menu__4 .plat {
+    color: #a96d9d; }
+    @media screen and (min-width: 300px) and (max-width: 400px) {
+      .menu__4 .plat .prix {
+        padding-top: 10px; } }
+  .menu__4 .dessert {
+    color: #7250cd;
+    text-align: justify; }
+  .menu__4 ul {
+    line-height: 40px; }
+    @media screen and (min-width: 700px) and (max-width: 1100px) {
+      .menu__4 ul {
+        line-height: 50px;
+        padding: 0 5% 0 5%; } }
+    @media screen and (min-width: 1100px) {
+      .menu__4 ul {
+        line-height: 60px;
+        padding: 0 7% 0 7%; } }
 
 /*# sourceMappingURL=style.css.map */

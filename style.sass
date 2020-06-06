@@ -26,7 +26,6 @@ $site-font-color: #fcca45
 @mixin card2_theme
   font-family: 'croissantone-regular'
   background-color: #fff5fe
-  white-space: nowrap
   h1
     font-size: 40px
     color: #c77410
@@ -204,25 +203,13 @@ footer
     float: right
     width: 10%
     text-align: right
-    @media only screen and (max-width: 400px) and (min-width: 300px)
-      padding-top: 10px
   .meal
     float: left
     width: 88%
   .title_bar_left
-    max-width: 25%
     float: left
-    padding-top: 12px
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      max-width: 35%
-    @media only screen and (min-width: 1100px)
-      max-width: 100%
   .title_bar_right
-    max-width: 25%
     float: right
-    padding-top: 12px
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      max-width: 35%
 .menu__1
   @include card1_theme
   @include menu-propeties
@@ -242,6 +229,18 @@ footer
     width: 15%
     @media only screen and (min-width: 1100px)
       width: 10%
+  .title_bar_left
+    max-width: 25%
+    padding-top: 12px
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      max-width: 35%
+    @media only screen and (min-width: 1100px)
+      max-width: 100%
+  .title_bar_right
+    max-width: 25%
+    padding-top: 12px
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      max-width: 35%
   h3
     font-size: 35px
     @media only screen and (max-width: 1100px) and (min-width: 700px)
@@ -252,6 +251,8 @@ footer
       font-size: 30px
   .prix
     font-weight: bold
+    @media only screen and (max-width: 400px) and (min-width: 300px)
+      padding-top: 10px
   .dessert
     text-align: justify
   .footer_title
@@ -266,9 +267,141 @@ footer
 .menu__2
   @include card2_theme
   @include menu-propeties
+  h2
+    font-size: 25px
+    @media screen and (min-width: 700px)
+      font-size: 40px
+  h3
+    font-size: 19px
+    @media screen and (min-width: 700px)
+      margin: 8% 0 3% 0
+  .title_bar_left
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .title_bar_right
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .entree
+    color: #c97b1f
+  .plat
+    color: #a96d9d
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      .prix
+        padding-top: 10px
+  .dessert
+    color: #7250cd
+    text-align: justify
+  ul
+    line-height: 40px
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+      line-height: 50px
+      padding: 0 5% 0 5%
+    @media screen and (min-width: 1100px)
+      line-height: 60px
+      padding: 0 7% 0 7%
 .menu__3
   @include menu-propeties
   @include card3_theme
+  h2
+    font-size: 25px
+    @media screen and (min-width: 700px)
+      font-size: 40px
+  h3
+    font-size: 19px
+    @media screen and (min-width: 700px)
+      margin: 8% 0 3% 0
+  .title_bar_left
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .title_bar_right
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .entree
+    color: #c97b1f
+  .plat
+    color: #a96d9d
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      .prix
+        padding-top: 10px
+  .dessert
+    color: #7250cd
+    text-align: justify
+  ul
+    line-height: 40px
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+      line-height: 50px
+      padding: 0 5% 0 5%
+    @media screen and (min-width: 1100px)
+      line-height: 60px
+      padding: 0 7% 0 7%
 .menu__4
   @include menu-propeties
   @include card4_theme
+  h2
+    font-size: 25px
+    @media screen and (min-width: 700px)
+      font-size: 40px
+  h3
+    font-size: 19px
+    @media screen and (min-width: 700px)
+      margin: 8% 0 3% 0
+  .title_bar_left
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .title_bar_right
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      visibility: hidden
+    @media screen and (min-width: 400px) and (max-width: 700px)
+      width: 16%
+      padding: 12px 0 0 0
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+        width: 30%
+        padding: 7px 0 0 0
+  .entree
+    color: #c97b1f
+  .plat
+    color: #a96d9d
+    @media screen and (min-width: 300px) and (max-width: 400px)
+      .prix
+        padding-top: 10px
+  .dessert
+    color: #7250cd
+    text-align: justify
+  ul
+    line-height: 40px
+    @media screen and (min-width: 700px) and (max-width: 1100px)
+      line-height: 50px
+      padding: 0 5% 0 5%
+    @media screen and (min-width: 1100px)
+      line-height: 60px
+      padding: 0 7% 0 7%
