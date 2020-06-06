@@ -113,7 +113,7 @@ main {
     -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
     box-shadow: 0px 0px 7px 11px #f2f2f2;
     font-family: "dancingscript";
-    background-color: #f9f9f9; }
+    background-color: #eeefef; }
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
       main .main__card3 {
         width: 48%;
@@ -122,17 +122,18 @@ main {
     main .main__card3 h1 {
       font-size: 40px;
       color: #0887fb; }
+      @media only screen and (max-width: 1100px) and (min-width: 700px) {
+        main .main__card3 h1 {
+          font-size: 60px; } }
     main .main__card3 h2 {
       font-size: 30px;
       background: #0029dd;
       background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      main .main__card3 h1 {
-        font-size: 50px; }
-      main .main__card3 h2 {
-        font-size: 40px; } }
+      @media only screen and (max-width: 1100px) and (min-width: 700px) {
+        main .main__card3 h2 {
+          font-size: 50px; } }
   main .main__card4 {
     width: 270px;
     text-align: center;
@@ -440,6 +441,9 @@ footer {
     .menu__2 .title_bar_right {
       width: 30%;
       padding: 7px 0 0 0; } }
+  @media screen and (min-width: 700px) {
+    .menu__2 ul {
+      font-size: 20px; } }
   .menu__2 .entree {
     color: #c97b1f; }
   .menu__2 .plat {
@@ -460,7 +464,7 @@ footer {
   flex-direction: column;
   padding: 3%;
   font-family: "dancingscript";
-  background-color: #f9f9f9; }
+  background-color: #eeefef; }
   @media only screen and (max-width: 1100px) and (min-width: 700px) {
     .menu__3 {
       margin: 5% 3% 14% 3%; } }
@@ -507,49 +511,58 @@ footer {
   .menu__3 h1 {
     font-size: 40px;
     color: #0887fb; }
+    @media only screen and (max-width: 1100px) and (min-width: 700px) {
+      .menu__3 h1 {
+        font-size: 60px; } }
   .menu__3 h2 {
     font-size: 30px;
     background: #0029dd;
     background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
-    .menu__3 h1 {
-      font-size: 50px; }
-    .menu__3 h2 {
-      font-size: 40px; } }
+    @media only screen and (max-width: 1100px) and (min-width: 700px) {
+      .menu__3 h2 {
+        font-size: 50px; } }
   .menu__3 h2 {
-    font-size: 25px; }
+    font-size: 35px; }
     @media screen and (min-width: 700px) {
       .menu__3 h2 {
-        font-size: 40px; } }
+        font-size: 80px; } }
   .menu__3 h3 {
-    font-size: 19px; }
+    font-size: 30px;
+    font-weight: lighter; }
+    @media screen and (min-width: 700px) {
+      .menu__3 h3 {
+        font-size: 40px; } }
   @media screen and (min-width: 400px) and (max-width: 700px) {
     .menu__3 .title_bar_left {
-      width: 16%;
-      padding: 12px 0 0 0; } }
+      width: 21%;
+      padding: 17px 0 0 0; } }
   @media screen and (min-width: 700px) and (max-width: 1100px) {
     .menu__3 .title_bar_left {
+      width: 23%;
+      padding: 20px 0 0 0; } }
+  @media screen and (min-width: 1100px) {
+    .menu__3 .title_bar_left {
       width: 30%;
-      padding: 7px 0 0 0; } }
+      padding: 20px 0 0 0; } }
   @media screen and (min-width: 400px) and (max-width: 700px) {
     .menu__3 .title_bar_right {
-      width: 16%;
-      padding: 12px 0 0 0; } }
+      width: 21%;
+      padding: 17px 0 0 0; } }
   @media screen and (min-width: 700px) and (max-width: 1100px) {
     .menu__3 .title_bar_right {
+      width: 23%;
+      padding: 20px 0 0 0; } }
+  @media screen and (min-width: 1100px) {
+    .menu__3 .title_bar_right {
       width: 30%;
-      padding: 7px 0 0 0; } }
-  .menu__3 .entree {
-    color: #c97b1f; }
-  .menu__3 .plat {
-    color: #a96d9d; }
-    @media screen and (min-width: 300px) and (max-width: 400px) {
-      .menu__3 .plat .prix {
-        padding-top: 10px; } }
-  .menu__3 .dessert {
-    color: #7250cd; }
+      padding: 20px 0 0 0; } }
+  .menu__3 ul {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
+      .menu__3 ul {
+        font-size: 32px; } }
 
 .menu__4 {
   margin: 5% 0% 16% 0%;

@@ -41,20 +41,19 @@ $site-font-color: #fcca45
       font-size: 31px
 @mixin card3_theme
   font-family: 'dancingscript'
-  background-color: #f9f9f9
+  background-color: #eeefef
   h1
     font-size: 40px
     color: #0887fb
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      font-size: 60px
   h2
     font-size: 30px
     background: rgb(0, 41, 221)
     background: linear-gradient(141deg, rgba(0, 41, 221, 1) 0%, rgba(5, 106, 242, 1) 50%, rgba(7, 137, 251, 1) 100%)
     @include radient_webkit
-  @media only screen and (max-width: 1100px) and (min-width: 700px)
-    h1
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
       font-size: 50px
-    h2
-      font-size: 40px
 @mixin card4_theme
   background-color: #fdfffd
   font-family: 'kaushanscript-regular'
@@ -180,7 +179,7 @@ footer
       float: right
 /* hypertext */
 /* layout */
-@mixin menu-propeties
+@mixin menu-properties
   margin: 5% 0% 16% 0%
   -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
   -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
@@ -228,7 +227,7 @@ footer
       visibility: hidden
 .menu__1
   @include card1_theme
-  @include menu-propeties
+  @include menu-properties
   .header_title
     font-size: 40px
     line-height: 1px
@@ -278,7 +277,7 @@ footer
     padding: 1%
 .menu__2
   @include card2_theme
-  @include menu-propeties
+  @include menu-properties
   h2
     font-size: 25px
     @media screen and (min-width: 700px)
@@ -299,6 +298,9 @@ footer
     @media screen and (min-width: 700px) and (max-width: 1100px)
         width: 30%
         padding: 7px 0 0 0
+  ul
+    @media screen and (min-width: 700px)
+      font-size: 20px
   .entree
     color: #c97b1f
   .plat
@@ -309,39 +311,43 @@ footer
   .dessert
     color: #7250cd
 .menu__3
-  @include menu-propeties
+  @include menu-properties
   @include card3_theme
   h2
-    font-size: 25px
+    font-size: 35px
+    @media screen and (min-width: 700px)
+      font-size: 80px
+  h3
+    font-size: 30px
+    font-weight: lighter
     @media screen and (min-width: 700px)
       font-size: 40px
-  h3
-    font-size: 19px
   .title_bar_left
     @media screen and (min-width: 400px) and (max-width: 700px)
-      width: 16%
-      padding: 12px 0 0 0
+      width: 21%
+      padding: 17px 0 0 0
     @media screen and (min-width: 700px) and (max-width: 1100px)
-        width: 30%
-        padding: 7px 0 0 0
+        width: 23%
+        padding: 20px 0 0 0
+    @media screen and (min-width: 1100px)
+      width: 30%
+      padding: 20px 0 0 0
   .title_bar_right
     @media screen and (min-width: 400px) and (max-width: 700px)
-      width: 16%
-      padding: 12px 0 0 0
+      width: 21%
+      padding: 17px 0 0 0
     @media screen and (min-width: 700px) and (max-width: 1100px)
-        width: 30%
-        padding: 7px 0 0 0
-  .entree
-    color: #c97b1f
-  .plat
-    color: #a96d9d
-    @media screen and (min-width: 300px) and (max-width: 400px)
-      .prix
-        padding-top: 10px
-  .dessert
-    color: #7250cd
+        width: 23%
+        padding: 20px 0 0 0
+    @media screen and (min-width: 1100px)
+      width: 30%
+      padding: 20px 0 0 0
+  ul
+    font-size: 25px
+    @media screen and (min-width: 700px)
+      font-size: 32px
 .menu__4
-  @include menu-propeties
+  @include menu-properties
   @include card4_theme
   h2
     font-size: 25px
