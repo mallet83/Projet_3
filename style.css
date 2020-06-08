@@ -317,31 +317,42 @@ footer {
       .menu__1 .note_footer {
         width: 10%; } }
   .menu__1 h2 {
-    font-size: 25px; }
+    font-size: 50px; }
     @media screen and (min-width: 700px) {
       .menu__1 h2 {
-        font-size: 40px; } }
+        font-size: 70px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__1 h2 {
+        font-size: 90px; } }
   .menu__1 h3 {
-    font-size: 19px; }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__1 .title_bar_left {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__1 .title_bar_left {
+    font-size: 30px; }
+    @media screen and (min-width: 700px) {
+      .menu__1 h3 {
+        font-size: 50px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__1 h3 {
+        font-size: 70px; } }
+  @media screen and (min-width: 400px) {
+    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+      width: 20%;
+      padding-top: 18px; } }
+  @media screen and (min-width: 700px) {
+    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
       width: 30%;
-      padding: 7px 0 0 0; } }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__1 .title_bar_right {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__1 .title_bar_right {
-      width: 30%;
-      padding: 7px 0 0 0; } }
+      padding-top: 15px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+      width: 32%;
+      padding-top: 20px; } }
+  @media screen and (min-width: 300px) {
+    .menu__1 ul {
+      font-size: 25px; } }
   @media screen and (min-width: 700px) {
     .menu__1 ul {
-      font-size: 20px; } }
+      font-size: 30px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__1 ul {
+      font-size: 40px; } }
 
 .menu__2 {
   display: flex;
@@ -511,31 +522,35 @@ footer {
       .menu__3 h2 {
         font-size: 50px; } }
   .menu__3 h2 {
-    font-size: 25px; }
+    font-size: 40px; }
     @media screen and (min-width: 700px) {
       .menu__3 h2 {
-        font-size: 40px; } }
+        font-size: 80px; } }
   .menu__3 h3 {
-    font-size: 19px; }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__3 .title_bar_left {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__3 .title_bar_left {
-      width: 30%;
-      padding: 7px 0 0 0; } }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__3 .title_bar_right {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__3 .title_bar_right {
-      width: 30%;
-      padding: 7px 0 0 0; } }
+    font-size: 30px; }
+    @media screen and (min-width: 700px) {
+      .menu__3 h3 {
+        font-size: 50px; } }
+  @media screen and (min-width: 400px) {
+    .menu__3 .title_bar_left, .menu__3 .title_bar_right {
+      width: 20%;
+      padding-top: 18px; } }
   @media screen and (min-width: 700px) {
-    .menu__3 ul {
-      font-size: 20px; } }
+    .menu__3 .title_bar_left, .menu__3 .title_bar_right {
+      width: 22%;
+      padding-top: 25px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__3 .title_bar_left, .menu__3 .title_bar_right {
+      width: 30%;
+      padding-top: 22px; } }
+  .menu__3 ul {
+    font-size: 19px; }
+    @media screen and (min-width: 400px) {
+      .menu__3 ul {
+        font-size: 22px; } }
+    @media screen and (min-width: 700px) {
+      .menu__3 ul {
+        font-size: 30px; } }
 
 .menu__4 {
   display: flex;
@@ -606,30 +621,34 @@ footer {
       .menu__4 h2 {
         font-size: 40px; } }
   .menu__4 h2 {
-    font-size: 25px; }
+    font-size: 35px; }
     @media screen and (min-width: 700px) {
       .menu__4 h2 {
-        font-size: 40px; } }
+        font-size: 70px; } }
   .menu__4 h3 {
-    font-size: 19px; }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__4 .title_bar_left {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__4 .title_bar_left {
-      width: 30%;
-      padding: 7px 0 0 0; } }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__4 .title_bar_right {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__4 .title_bar_right {
-      width: 30%;
-      padding: 7px 0 0 0; } }
+    font-size: 26px; }
+    @media screen and (min-width: 700px) {
+      .menu__4 h3 {
+        font-size: 50px; } }
+  @media screen and (min-width: 400px) {
+    .menu__4 .title_bar_left, .menu__4 .title_bar_right {
+      width: 22%;
+      padding-top: 18px; } }
   @media screen and (min-width: 700px) {
-    .menu__4 ul {
-      font-size: 20px; } }
+    .menu__4 .title_bar_left, .menu__4 .title_bar_right {
+      width: 22%;
+      padding-top: 40px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__4 .title_bar_left, .menu__4 .title_bar_right {
+      width: 30%;
+      padding-top: 40px; } }
+  .menu__4 ul {
+    font-size: 19px; }
+    @media screen and (min-width: 400px) {
+      .menu__4 ul {
+        font-size: 22px; } }
+    @media screen and (min-width: 700px) {
+      .menu__4 ul {
+        font-size: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
