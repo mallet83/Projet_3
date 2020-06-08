@@ -27,14 +27,16 @@ header {
   background-color: #569c87;
   width: 100%;
   text-align: center;
+  height: 30%;
   vertical-align: middle; }
   header img {
+    flex-grow: 1;
     margin: auto;
     padding: 2% 20% 2% 20%;
-    width: 30%; }
-    @media only screen and (max-width: 1100px) and (min-width: 300px) {
+    width: 50%; }
+    @media screen and (min-width: 600px) {
       header img {
-        width: 50%; } }
+        width: 30%; } }
 
 main {
   margin-top: 5%;
@@ -216,9 +218,9 @@ footer {
   background-color: #569c87;
   color: #fcca45;
   font-size: 17px; }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+  @media only screen and (min-width: 700px) {
     footer {
-      font-size: 30px; } }
+      font-size: 20px; } }
 
 .footer__mention {
   padding: 2%;
@@ -237,21 +239,23 @@ footer {
 /* hypertext */
 /* layout */
 .menu__1 {
-  display: flex;
-  flex-direction: column;
   font-family: "babiol";
   background-color: #fcdfdb;
-  margin: 5% 0% 16% 0%;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
   box-shadow: 0px 0px 7px 11px #f2f2f2;
-  padding: 3%; }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+  padding: 3%;
+  margin: 5% 1% 10% 1%; }
+  @media only screen and (min-width: 700px) {
     .menu__1 {
       margin: 5% 3% 14% 3%; } }
   @media only screen and (min-width: 1100px) {
     .menu__1 {
-      margin: 5% 5% 12% 5%; } }
+      margin: 3% 5% 12% 5%;
+      padding: 1% 5% 1% 5%; } }
   .menu__1 h2, .menu__1 h3 {
     text-align: center; }
   @media screen and (min-width: 700px) {
@@ -317,53 +321,69 @@ footer {
       .menu__1 .note_footer {
         width: 10%; } }
   .menu__1 h2 {
-    font-size: 50px; }
-    @media screen and (min-width: 700px) {
-      .menu__1 h2 {
-        font-size: 70px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__1 h2 {
-        font-size: 90px; } }
-  .menu__1 h3 {
     font-size: 30px; }
     @media screen and (min-width: 700px) {
-      .menu__1 h3 {
+      .menu__1 h2 {
+        font-size: 40px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__1 h2 {
         font-size: 50px; } }
+  .menu__1 h3 {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
+      .menu__1 h3 {
+        font-size: 35px; } }
     @media screen and (min-width: 1100px) {
       .menu__1 h3 {
-        font-size: 70px; } }
+        font-size: 45px; } }
   @media screen and (min-width: 400px) {
     .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-      width: 20%;
-      padding-top: 18px; } }
+      width: 30%;
+      padding-top: 8px; } }
   @media screen and (min-width: 700px) {
     .menu__1 .title_bar_left, .menu__1 .title_bar_right {
       width: 30%;
-      padding-top: 15px; } }
+      padding-top: 10px; } }
   @media screen and (min-width: 1100px) {
     .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-      width: 32%;
-      padding-top: 20px; } }
+      width: 35%;
+      padding-top: 10px; } }
   @media screen and (min-width: 300px) {
     .menu__1 ul {
-      font-size: 25px; } }
+      font-size: 20px; } }
   @media screen and (min-width: 700px) {
     .menu__1 ul {
-      font-size: 30px; } }
+      font-size: 25px; } }
   @media screen and (min-width: 1100px) {
     .menu__1 ul {
+      font-size: 30px; } }
+  @media screen and (min-width: 300px) {
+    .menu__1 .footer_title {
+      font-size: 28px; } }
+  @media screen and (min-width: 700px) {
+    .menu__1 .footer_title {
       font-size: 40px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__1 .footer_title {
+      font-size: 50px; } }
+  @media screen and (min-width: 300px) {
+    .menu__1 .footer_title img {
+      width: 10%; } }
+  @media screen and (min-width: 700px) {
+    .menu__1 .footer_title img {
+      width: 5%; } }
 
 .menu__2 {
-  display: flex;
-  flex-direction: column;
   font-family: "croissantone-regular";
   background-color: #fff5fe;
-  margin: 5% 0% 16% 0%;
+  display: flex;
+  flex-grow: 2;
+  flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
   box-shadow: 0px 0px 7px 11px #f2f2f2;
-  padding: 3%; }
+  padding: 3%;
+  margin: 5% 1% 10% 1%; }
   .menu__2 h1 {
     font-size: 40px;
     color: #c77410; }
@@ -379,12 +399,13 @@ footer {
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
       .menu__2 h2 {
         font-size: 31px; } }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+  @media only screen and (min-width: 700px) {
     .menu__2 {
       margin: 5% 3% 14% 3%; } }
   @media only screen and (min-width: 1100px) {
     .menu__2 {
-      margin: 5% 5% 12% 5%; } }
+      margin: 3% 5% 12% 5%;
+      padding: 1% 5% 1% 5%; } }
   .menu__2 h2, .menu__2 h3 {
     text-align: center; }
   @media screen and (min-width: 700px) {
@@ -431,45 +452,56 @@ footer {
     font-size: 25px; }
     @media screen and (min-width: 700px) {
       .menu__2 h2 {
+        font-size: 33px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__2 h2 {
         font-size: 40px; } }
   .menu__2 h3 {
     font-size: 19px; }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__2 .title_bar_left {
-      width: 16%;
+    @media screen and (min-width: 700px) {
+      .menu__2 h3 {
+        font-size: 21px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__2 h3 {
+        font-size: 25px; } }
+  @media screen and (min-width: 400px) {
+    .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      width: 15%;
       padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__2 .title_bar_left {
-      width: 30%;
-      padding: 7px 0 0 0; } }
-  @media screen and (min-width: 400px) and (max-width: 700px) {
-    .menu__2 .title_bar_right {
-      width: 16%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
-    .menu__2 .title_bar_right {
-      width: 30%;
-      padding: 7px 0 0 0; } }
   @media screen and (min-width: 700px) {
-    .menu__2 ul {
-      font-size: 20px; } }
+    .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      width: 25%;
+      padding-top: 10px; } }
+  @media screen and (min-width: 1100px) {
+    .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      width: 30%; } }
+  .menu__2 ul {
+    font-size: 17px; }
+    @media screen and (min-width: 700px) {
+      .menu__2 ul {
+        font-size: 20px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__2 ul {
+        font-size: 21px; } }
 
 .menu__3 {
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
-  margin: 5% 0% 16% 0%;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
   box-shadow: 0px 0px 7px 11px #f2f2f2;
   padding: 3%;
+  margin: 5% 1% 10% 1%;
   font-family: "dancingscript";
   background-color: #eeefef; }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+  @media only screen and (min-width: 700px) {
     .menu__3 {
       margin: 5% 3% 14% 3%; } }
   @media only screen and (min-width: 1100px) {
     .menu__3 {
-      margin: 5% 5% 12% 5%; } }
+      margin: 3% 5% 12% 5%;
+      padding: 1% 5% 1% 5%; } }
   .menu__3 h2, .menu__3 h3 {
     text-align: center; }
   @media screen and (min-width: 700px) {
@@ -522,27 +554,30 @@ footer {
       .menu__3 h2 {
         font-size: 50px; } }
   .menu__3 h2 {
-    font-size: 40px; }
-    @media screen and (min-width: 700px) {
-      .menu__3 h2 {
-        font-size: 80px; } }
-  .menu__3 h3 {
     font-size: 30px; }
     @media screen and (min-width: 700px) {
+      .menu__3 h2 {
+        font-size: 30px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__3 h2 {
+        font-size: 45px; } }
+  .menu__3 h3 {
+    font-size: 25px; }
+    @media screen and (min-width: 700px) {
       .menu__3 h3 {
-        font-size: 50px; } }
+        font-size: 30px; } }
   @media screen and (min-width: 400px) {
     .menu__3 .title_bar_left, .menu__3 .title_bar_right {
       width: 20%;
-      padding-top: 18px; } }
+      padding-top: 14px; } }
   @media screen and (min-width: 700px) {
     .menu__3 .title_bar_left, .menu__3 .title_bar_right {
-      width: 22%;
-      padding-top: 25px; } }
+      width: 25%;
+      padding-top: 15px; } }
   @media screen and (min-width: 1100px) {
     .menu__3 .title_bar_left, .menu__3 .title_bar_right {
       width: 30%;
-      padding-top: 22px; } }
+      padding-top: 10px; } }
   .menu__3 ul {
     font-size: 19px; }
     @media screen and (min-width: 400px) {
@@ -554,20 +589,22 @@ footer {
 
 .menu__4 {
   display: flex;
+  flex-grow: 2;
   flex-direction: column;
-  margin: 5% 0% 16% 0%;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
   box-shadow: 0px 0px 7px 11px #f2f2f2;
   padding: 3%;
+  margin: 5% 1% 10% 1%;
   background-color: #fdfffd;
   font-family: "kaushanscript-regular"; }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+  @media only screen and (min-width: 700px) {
     .menu__4 {
       margin: 5% 3% 14% 3%; } }
   @media only screen and (min-width: 1100px) {
     .menu__4 {
-      margin: 5% 5% 12% 5%; } }
+      margin: 3% 5% 12% 5%;
+      padding: 1% 5% 1% 5%; } }
   .menu__4 h2, .menu__4 h3 {
     text-align: center; }
   @media screen and (min-width: 700px) {
@@ -621,34 +658,37 @@ footer {
       .menu__4 h2 {
         font-size: 40px; } }
   .menu__4 h2 {
-    font-size: 35px; }
+    font-size: 30px; }
     @media screen and (min-width: 700px) {
       .menu__4 h2 {
-        font-size: 70px; } }
+        font-size: 42px; } }
   .menu__4 h3 {
-    font-size: 26px; }
+    font-size: 20px; }
     @media screen and (min-width: 700px) {
       .menu__4 h3 {
-        font-size: 50px; } }
+        font-size: 30px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__4 h3 {
+        font-size: 40px; } }
   @media screen and (min-width: 400px) {
     .menu__4 .title_bar_left, .menu__4 .title_bar_right {
       width: 22%;
-      padding-top: 18px; } }
+      padding-top: 15px; } }
   @media screen and (min-width: 700px) {
     .menu__4 .title_bar_left, .menu__4 .title_bar_right {
-      width: 22%;
-      padding-top: 40px; } }
+      width: 26%;
+      padding-top: 20px; } }
   @media screen and (min-width: 1100px) {
     .menu__4 .title_bar_left, .menu__4 .title_bar_right {
       width: 30%;
-      padding-top: 40px; } }
+      padding-top: 25px; } }
   .menu__4 ul {
-    font-size: 19px; }
+    font-size: 15px; }
     @media screen and (min-width: 400px) {
       .menu__4 ul {
-        font-size: 22px; } }
+        font-size: 17px; } }
     @media screen and (min-width: 700px) {
       .menu__4 ul {
-        font-size: 30px; } }
+        font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
