@@ -470,7 +470,7 @@ footer {
       padding: 12px 0 0 0; } }
   @media screen and (min-width: 700px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
-      width: 25%;
+      width: 20%;
       padding-top: 10px; } }
   @media screen and (min-width: 1100px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
@@ -557,7 +557,7 @@ footer {
     font-size: 30px; }
     @media screen and (min-width: 700px) {
       .menu__3 h2 {
-        font-size: 30px; } }
+        font-size: 40px; } }
     @media screen and (min-width: 1100px) {
       .menu__3 h2 {
         font-size: 45px; } }
