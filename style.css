@@ -474,7 +474,7 @@ footer {
       padding-top: 10px; } }
   @media screen and (min-width: 1100px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
-      width: 30%; } }
+      width: 25%; } }
   .menu__2 ul {
     font-size: 17px; }
     @media screen and (min-width: 700px) {
