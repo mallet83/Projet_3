@@ -2,6 +2,7 @@
 a
   text-decoration-line: none
   color: inherit
+  display: block
 @font-face
   font-family: 'babiol'
   src: url(babie___.ttf)
@@ -23,52 +24,65 @@ $site-font-color: #fcca45
 @mixin card1_theme
   font-family: 'babiol'
   background-color: #fcdfdb
+  h1
+    font-size: 35px
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      font-size: 40px
+  h2
+    font-size: 30px
+    line-height: 1px
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      font-size: 40px
+  img
+    width: 10%
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      font-size: 50px
 @mixin card2_theme
   font-family: 'croissantone-regular'
   background-color: #fff5fe
   h1
-    font-size: 40px
+    font-size: 25px
     color: #c77410
     @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 50px
+      font-size: 40px
   h2
     font-size: 21px
+    @media only screen and (max-width: 1100px) and (min-width: 700px)
+      font-size: 25px
     background: rgb(198, 116, 17)
     background: linear-gradient(141deg, rgba(198, 116, 17, 1) 0%, rgba(183, 129, 77, 1) 25%, rgba(165, 102, 153, 1) 50%, rgba(140, 90, 176, 1) 75%, rgba(110, 76, 204, 1) 100%)
     @include radient_webkit
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 31px
 @mixin card3_theme
   font-family: 'dancingscript'
   background-color: #eeefef
   h1
-    font-size: 40px
+    font-size: 30px
     color: #0887fb
     @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 60px
+      font-size: 40px
   h2
-    font-size: 30px
+    font-size: 25px
     background: rgb(0, 41, 221)
     background: linear-gradient(141deg, rgba(0, 41, 221, 1) 0%, rgba(5, 106, 242, 1) 50%, rgba(7, 137, 251, 1) 100%)
     @include radient_webkit
     @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 50px
+      font-size: 40px
 @mixin card4_theme
   background-color: #fdfffd
   font-family: 'kaushanscript-regular'
   h1
-    font-size: 35px
+    font-size: 25px
     font-weight: lighter
     color: #72bf56
     @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 45px
+      font-size: 40px
   h2
-    font-size: 30px
+    font-size: 23px
     background: rgb(90, 171, 72)
     background: linear-gradient(141deg, rgba(90, 171, 72, 1) 0%, rgba(169, 237, 116, 1) 50%, rgba(190, 255, 127, 1) 100%)
     @include radient_webkit
     @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 40px
+      font-size: 35px
 @mixin site-theme
   font-family: 'montserrat'
   background-color: #569c87
@@ -88,30 +102,46 @@ header
   background-color: $site-color
   width: 100%
   text-align: center
-  height: 30%
   vertical-align: middle
   img
-    flex-grow: 1
     margin: auto
     padding: 2% 20% 2% 20%
     width: 50%
     @media screen and (min-width: 600px)
       width: 30%
 @mixin card-properties
-            width: 270px
             text-align: center
-            padding-top: 150px
-            height: 300px
-            vertical-align: middle
-            margin: auto
-            margin-bottom: 40px
-            -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-            -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-            box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-            @media only screen and (max-width: 1100px) and (min-width: 700px)
-              width: 48%
-              height: 400px
-              padding-top: 200px
+            &:hover
+              opacity: 0.5
+            &:hover a
+              transform: scale(1.2)
+              transform-origin: 50% 50%
+            @media only screen and (min-width: 300px)
+              width: 46%
+              height: 200px
+              padding-top: 50px
+              margin: 1% 2% 8% 2%
+              -webkit-box-shadow: 0px 0px 7px 5px rgba(242, 242, 242, 1)
+              -moz-box-shadow: 0px 0px 7px 5px rgba(242, 242, 242, 1)
+              box-shadow: 0px 0px 7px 5px rgba(242, 242, 242, 1)
+            @media only screen and (min-width: 400px)
+              width: 40%
+              height: 200px
+              margin: 1% 5% 6% 5%
+              -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+              -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+              box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
+            @media only screen and (min-width: 700px)
+              height: 300px
+              padding-top: 100px
+            @media only screen and (min-width: 1000px)
+              width: 20%
+              height: 250px
+              padding-top: 100px
+              margin: 0 3% 10% 2%
+              align-content: center
+
+
 main
   margin-top: 5%
   display: flex
@@ -119,17 +149,6 @@ main
 .main__card1
   @include card-properties
   @include card1_theme
-  h1
-    font-size: 50px
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 60px
-  h2
-    font-size: 40px
-    line-height: 1px
-  img
-    width: 15%
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 50px
 .main__card2
   @include card-properties
   @include card2_theme
@@ -153,7 +172,7 @@ main
   @media only screen and (max-width: 700px) and (min-width: 400px)
     font-size: 18px
     width: 50%
-    margin-bottom: 15%
+    margin: 0 25% 15% 25%
   @media only screen and (max-width: 400px) and (min-width: 300px)
     font-size: 16px
     width: 50%
@@ -166,7 +185,8 @@ footer
   @include site-theme
   font-size: 17px
   @media only screen and (min-width: 700px)
-    font-size: 20px
+    font-size: 17px
+    max-height: 10%
 .footer__mention
   padding: 2%
   @include site-theme
@@ -362,7 +382,7 @@ footer
   h2
     font-size: 30px
     @media screen and (min-width: 700px)
-      font-size: 42px
+      font-size: 50px
   h3
     font-size: 20px
     @media screen and (min-width: 700px)
