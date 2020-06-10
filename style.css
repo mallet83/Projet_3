@@ -77,8 +77,7 @@ main {
         width: 20%;
         height: 250px;
         padding-top: 100px;
-        margin: 0 3% 10% 2%;
-        align-content: center; } }
+        margin: 0 3% 2% 2%; } }
     main .main__card1 h1 {
       font-size: 30px; }
       @media only screen and (max-width: 1100px) and (min-width: 700px) {
@@ -130,8 +129,7 @@ main {
         width: 20%;
         height: 250px;
         padding-top: 100px;
-        margin: 0 3% 10% 2%;
-        align-content: center; } }
+        margin: 0 3% 2% 2%; } }
     main .main__card2 h1 {
       font-size: 25px;
       color: #c77410; }
@@ -182,8 +180,7 @@ main {
         width: 20%;
         height: 250px;
         padding-top: 100px;
-        margin: 0 3% 10% 2%;
-        align-content: center; } }
+        margin: 0 3% 2% 2%; } }
     main .main__card3 h1 {
       font-size: 30px;
       color: #0887fb; }
@@ -234,8 +231,7 @@ main {
         width: 20%;
         height: 250px;
         padding-top: 100px;
-        margin: 0 3% 10% 2%;
-        align-content: center; } }
+        margin: 0 3% 2% 2%; } }
     main .main__card4 h1 {
       font-size: 25px;
       font-weight: lighter;
