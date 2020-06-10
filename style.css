@@ -80,7 +80,7 @@ main {
         margin: 0 3% 10% 2%;
         align-content: center; } }
     main .main__card1 h1 {
-      font-size: 35px; }
+      font-size: 30px; }
       @media only screen and (max-width: 1100px) and (min-width: 700px) {
         main .main__card1 h1 {
           font-size: 40px; } }
@@ -360,7 +360,7 @@ footer {
   padding: 3%;
   margin: 5% 1% 10% 1%; }
   .menu__1 h1 {
-    font-size: 35px; }
+    font-size: 30px; }
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
       .menu__1 h1 {
         font-size: 40px; } }
@@ -581,17 +581,11 @@ footer {
     @media screen and (min-width: 700px) {
       .menu__2 h2 {
         font-size: 33px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__2 h2 {
-        font-size: 40px; } }
   .menu__2 h3 {
     font-size: 19px; }
     @media screen and (min-width: 700px) {
       .menu__2 h3 {
         font-size: 21px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__2 h3 {
-        font-size: 25px; } }
   @media screen and (min-width: 400px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
       width: 15%;
@@ -607,7 +601,7 @@ footer {
     font-size: 17px; }
     @media screen and (min-width: 700px) {
       .menu__2 ul {
-        font-size: 20px; } }
+        font-size: 19px; } }
 
 .menu__3 {
   display: flex;
