@@ -21,6 +21,32 @@ a
 $site-color: #569c87
 $site-font-color: #fcca45
 /* style */
+@mixin wiggle
+    animation: shake 0.5s
+    animation-iteration-count: infinite
+    @keyframes shake
+      0%
+        transform: translate(1px, 1px) rotate(0deg)
+      10%
+        transform: translate(-1px, -2px) rotate(-1deg)
+      20%
+        transform: translate(-3px, 0px) rotate(1deg)
+      30%
+        transform: translate(3px, 2px) rotate(0deg)
+      40%
+        transform: translate(1px, -1px) rotate(1deg)
+      50%
+        transform: translate(-1px, 2px) rotate(-1deg)
+      60%
+        transform: translate(-3px, 1px) rotate(0deg)
+      70%
+        transform: translate(3px, 1px) rotate(-1deg)
+      80%
+        transform: translate(-1px, -1px) rotate(1deg)
+      90%
+        transform: translate(1px, 2px) rotate(0deg)
+      100%
+        transform: translate(1px, -2px) rotate(-1deg)
 @mixin card1_theme
   font-family: 'babiol'
   background-color: #fcdfdb
@@ -160,33 +186,34 @@ main
   margin-top: 5%
   display: flex
   flex-wrap: wrap
-.main__card1
-  @include card-properties
-  @include card1_theme
-.main__card2
-  @include card-properties
-  @include card2_theme
-.main__card3
-  @include card-properties
-  @include card3_theme
-.main__card4
-  @include card-properties
-  @include card4_theme
-.main--btn
-  &:after
-    overflow: hidden
-    display: inline-block
-    vertical-align: bottom
-    -webkit-animation: ellipsis steps(4,end) 900ms infinite
-    animation: ellipsis steps(4,end) 900ms infinite
-    content: "\2026"
-    width: 0px
-    @keyframes ellipsis
-      to
-        width: 1.25em
-  @include button-theme
-  @include site-theme
+  .main__card1
+    @include card-properties
+    @include card1_theme
+  .main__card2
+    @include card-properties
+    @include card2_theme
+  .main__card3
+    @include card-properties
+    @include card3_theme
+  .main__card4
+    @include card-properties
+    @include card4_theme
+  .main--btn
+    &:after
+      overflow: hidden
+      display: inline-block
+      vertical-align: bottom
+      -webkit-animation: ellipsis steps(4,end) 900ms infinite
+      animation: ellipsis steps(4,end) 900ms infinite
+      content: "\2026"
+      width: 0px
+      @keyframes ellipsis
+        to
+          width: 1.25em
+    @include button-theme
+    @include site-theme
 footer
+  overflow: hidden
   position: fixed
   bottom: 0
   left: 0
@@ -196,14 +223,17 @@ footer
   @media only screen and (min-width: 700px)
     font-size: 17px
     max-height: 10%
-.footer__mention
-  padding: 2%
-  @include site-theme
-  float: left
-.footer__contact
-  padding: 2%
-  @include site-theme
-  float: right
+  a
+    &:hover
+      @include wiggle
+  .footer__mention
+    padding: 2%
+    @include site-theme
+    float: left
+  .footer__contact
+    padding: 2%
+    @include site-theme
+    float: right
 /* hypertext */
 /* layout */
 @mixin menu-properties
