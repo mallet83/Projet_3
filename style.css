@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* font */
 a {
   text-decoration-line: none;
@@ -68,11 +69,11 @@ main {
       -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
       -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
       box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
     .main__card1 {
       height: 300px;
-      padding-top: 100px; } }
-  @media only screen and (min-width: 1000px) {
+      padding-top: 150px; } }
+  @media only screen and (min-width: 1100px) {
     .main__card1 {
       width: 20%;
       height: 250px;
@@ -122,11 +123,11 @@ main {
       -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
       -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
       box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
     .main__card2 {
       height: 300px;
-      padding-top: 100px; } }
-  @media only screen and (min-width: 1000px) {
+      padding-top: 150px; } }
+  @media only screen and (min-width: 1100px) {
     .main__card2 {
       width: 20%;
       height: 250px;
@@ -175,11 +176,11 @@ main {
       -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
       -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
       box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
     .main__card3 {
       height: 300px;
-      padding-top: 100px; } }
-  @media only screen and (min-width: 1000px) {
+      padding-top: 150px; } }
+  @media only screen and (min-width: 1100px) {
     .main__card3 {
       width: 20%;
       height: 250px;
@@ -228,11 +229,11 @@ main {
       -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
       -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
       box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-  @media only screen and (min-width: 700px) {
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
     .main__card4 {
       height: 300px;
-      padding-top: 100px; } }
-  @media only screen and (min-width: 1000px) {
+      padding-top: 150px; } }
+  @media only screen and (min-width: 1100px) {
     .main__card4 {
       width: 20%;
       height: 250px;
@@ -266,16 +267,27 @@ main {
   font-family: "montserrat";
   background-color: #569c87;
   color: #fcca45; }
+  .main--btn:after {
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: bottom;
+    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+    animation: ellipsis steps(4, end) 900ms infinite;
+    content: "…";
+    width: 0px; }
+@keyframes ellipsis {
+  to {
+    width: 1.25em; } }
   @media only screen and (min-width: 1100px) {
     .main--btn {
-      width: 40%;
+      width: 30%;
       font-size: 22px;
-      margin: 1% 30% 9% 30%; } }
-  @media only screen and (max-width: 1100px) and (min-width: 700px) {
+      margin: 1% 35% 9% 35%; } }
+  @media only screen and (min-width: 700px) and (max-width: 1100px) {
     .main--btn {
       width: 40%;
       margin: 0 30% 13% 30%;
-      font-size: 30px; } }
+      font-size: 20px; } }
   @media only screen and (max-width: 700px) and (min-width: 400px) {
     .main--btn {
       font-size: 18px;
@@ -284,8 +296,8 @@ main {
   @media only screen and (max-width: 400px) and (min-width: 300px) {
     .main--btn {
       font-size: 16px;
-      width: 50%;
-      margin: 0 25% 15% 25%; } }
+      width: 60%;
+      margin: 0 20% 15% 20%; } }
 
 footer {
   position: fixed;
@@ -353,20 +365,17 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__1 h2, .menu__1 h3 {
     text-align: center; }
-  @media screen and (min-width: 700px) {
-    .menu__1 h3 {
-      margin: 8% 0 3% 0; } }
   .menu__1 ul {
     padding: 0;
     list-style: none;
-    line-height: 40px; }
+    line-height: 30px; }
     @media screen and (min-width: 700px) and (max-width: 1100px) {
       .menu__1 ul {
-        line-height: 50px;
+        line-height: 30px;
         padding: 0 5% 0 5%; } }
     @media screen and (min-width: 1100px) {
       .menu__1 ul {
-        line-height: 60px;
+        line-height: 45px;
         padding: 0 7% 0 7%; } }
   .menu__1 .prix {
     float: right;
@@ -503,20 +512,17 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__2 h2, .menu__2 h3 {
     text-align: center; }
-  @media screen and (min-width: 700px) {
-    .menu__2 h3 {
-      margin: 8% 0 3% 0; } }
   .menu__2 ul {
     padding: 0;
     list-style: none;
-    line-height: 40px; }
+    line-height: 30px; }
     @media screen and (min-width: 700px) and (max-width: 1100px) {
       .menu__2 ul {
-        line-height: 50px;
+        line-height: 30px;
         padding: 0 5% 0 5%; } }
     @media screen and (min-width: 1100px) {
       .menu__2 ul {
-        line-height: 60px;
+        line-height: 45px;
         padding: 0 7% 0 7%; } }
   .menu__2 .prix {
     float: right;
@@ -575,9 +581,6 @@ footer {
     @media screen and (min-width: 700px) {
       .menu__2 ul {
         font-size: 20px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__2 ul {
-        font-size: 21px; } }
 
 .menu__3 {
   display: flex;
@@ -599,20 +602,17 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__3 h2, .menu__3 h3 {
     text-align: center; }
-  @media screen and (min-width: 700px) {
-    .menu__3 h3 {
-      margin: 8% 0 3% 0; } }
   .menu__3 ul {
     padding: 0;
     list-style: none;
-    line-height: 40px; }
+    line-height: 30px; }
     @media screen and (min-width: 700px) and (max-width: 1100px) {
       .menu__3 ul {
-        line-height: 50px;
+        line-height: 30px;
         padding: 0 5% 0 5%; } }
     @media screen and (min-width: 1100px) {
       .menu__3 ul {
-        line-height: 60px;
+        line-height: 45px;
         padding: 0 7% 0 7%; } }
   .menu__3 .prix {
     float: right;
@@ -702,20 +702,17 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__4 h2, .menu__4 h3 {
     text-align: center; }
-  @media screen and (min-width: 700px) {
-    .menu__4 h3 {
-      margin: 8% 0 3% 0; } }
   .menu__4 ul {
     padding: 0;
     list-style: none;
-    line-height: 40px; }
+    line-height: 30px; }
     @media screen and (min-width: 700px) and (max-width: 1100px) {
       .menu__4 ul {
-        line-height: 50px;
+        line-height: 30px;
         padding: 0 5% 0 5%; } }
     @media screen and (min-width: 1100px) {
       .menu__4 ul {
-        line-height: 60px;
+        line-height: 45px;
         padding: 0 7% 0 7%; } }
   .menu__4 .prix {
     float: right;

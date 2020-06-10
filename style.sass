@@ -92,6 +92,22 @@ $site-font-color: #fcca45
   padding: 2% 5% 2% 5%
   border-radius: 10px
   border: inherit
+  @media only screen and (min-width: 1100px)
+    width: 30%
+    font-size: 22px
+    margin: 1% 35% 9% 35%
+  @media only screen and (min-width: 700px) and (max-width: 1100px)
+    width: 40%
+    margin: 0 30% 13% 30%
+    font-size: 20px
+  @media only screen and (max-width: 700px) and (min-width: 400px)
+    font-size: 18px
+    width: 50%
+    margin: 0 25% 15% 25%
+  @media only screen and (max-width: 400px) and (min-width: 300px)
+    font-size: 16px
+    width: 60%
+    margin: 0 20% 15% 20%
 @mixin radient_webkit
   -webkit-background-clip: text
   -webkit-text-fill-color: transparent
@@ -131,17 +147,15 @@ header
               -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
               -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
               box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
-            @media only screen and (min-width: 700px)
+            @media only screen and (min-width: 700px) and (max-width: 1100px)
               height: 300px
-              padding-top: 100px
-            @media only screen and (min-width: 1000px)
+              padding-top: 150px
+            @media only screen and (min-width: 1100px)
               width: 20%
               height: 250px
               padding-top: 100px
               margin: 0 3% 10% 2%
               align-content: center
-
-
 main
   margin-top: 5%
   display: flex
@@ -159,24 +173,19 @@ main
   @include card-properties
   @include card4_theme
 .main--btn
+  &:after
+    overflow: hidden
+    display: inline-block
+    vertical-align: bottom
+    -webkit-animation: ellipsis steps(4,end) 900ms infinite
+    animation: ellipsis steps(4,end) 900ms infinite
+    content: "\2026"
+    width: 0px
+    @keyframes ellipsis
+      to
+        width: 1.25em
   @include button-theme
   @include site-theme
-  @media only screen and (min-width: 1100px)
-    width: 40%
-    font-size: 22px
-    margin: 1% 30% 9% 30%
-  @media only screen and (max-width: 1100px) and (min-width: 700px)
-    width: 40%
-    margin: 0 30% 13% 30%
-    font-size: 30px
-  @media only screen and (max-width: 700px) and (min-width: 400px)
-    font-size: 18px
-    width: 50%
-    margin: 0 25% 15% 25%
-  @media only screen and (max-width: 400px) and (min-width: 300px)
-    font-size: 16px
-    width: 50%
-    margin: 0 25% 15% 25%
 footer
   position: fixed
   bottom: 0
@@ -213,18 +222,15 @@ footer
     padding: 1% 5% 1% 5%
   h2, h3
     text-align: center
-  h3
-    @media screen and (min-width: 700px)
-      margin: 8% 0 3% 0
   ul
     padding: 0
     list-style: none
-    line-height: 40px
+    line-height: 30px
     @media screen and (min-width: 700px) and (max-width: 1100px)
-      line-height: 50px
+      line-height: 30px
       padding: 0 5% 0 5%
     @media screen and (min-width: 1100px)
-      line-height: 60px
+      line-height: 45px
       padding: 0 7% 0 7%
   .prix
     float: right
@@ -345,8 +351,6 @@ footer
     font-size: 17px
     @media screen and (min-width: 700px)
       font-size: 20px
-    @media screen and (min-width: 1100px)
-      font-size: 21px
 .menu__3
   @include menu-properties
   @include card3_theme
