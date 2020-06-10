@@ -21,7 +21,7 @@ a {
   font-family: "kaushanscript-regular";
   src: url(kaushanscript-regular.ttf); }
 /* style */
-/* layout */
+/* Index Layout */
 body {
   margin: auto; }
 
@@ -256,23 +256,12 @@ main {
     font-family: "montserrat";
     background-color: #569c87;
     color: #fcca45;
-    padding: 2% 5% 2% 5%;
-    border-radius: 10px;
-    border: inherit;
     font-family: "montserrat";
     background-color: #569c87;
-    color: #fcca45; }
-    main .main--btn:after {
-      overflow: hidden;
-      display: inline-block;
-      vertical-align: bottom;
-      -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-      animation: ellipsis steps(4, end) 900ms infinite;
-      content: "…";
-      width: 0px; }
-@keyframes ellipsis {
-  to {
-    width: 1.25em; } }
+    color: #fcca45;
+    padding: 2% 5% 2% 5%;
+    border-radius: 10px;
+    border: inherit; }
     @media only screen and (min-width: 1100px) {
       main .main--btn {
         width: 30%;
@@ -293,7 +282,17 @@ main {
         font-size: 16px;
         width: 60%;
         margin: 0 20% 15% 20%; } }
-
+    main .main--btn:after {
+      overflow: hidden;
+      display: inline-block;
+      vertical-align: bottom;
+      -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+      animation: ellipsis steps(4, end) 900ms infinite;
+      content: "…";
+      width: 0px; }
+@keyframes ellipsis {
+  to {
+    width: 1.25em; } }
 footer {
   overflow: hidden;
   position: fixed;
@@ -347,7 +346,7 @@ footer {
     color: #fcca45;
     float: right; }
 
-/* hypertext */
+/* hypertext Layout */
 /* layout */
 .menu__1 {
   font-family: "babiol";
@@ -385,6 +384,10 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__1 h2, .menu__1 h3 {
     text-align: center; }
+  .menu__1 h3 {
+    font-weight: lighter; }
+    .menu__1 h3:hover {
+      text-decoration: underline; }
   .menu__1 ul {
     padding: 0;
     list-style: none;
@@ -532,6 +535,10 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__2 h2, .menu__2 h3 {
     text-align: center; }
+  .menu__2 h3 {
+    font-weight: lighter; }
+    .menu__2 h3:hover {
+      text-decoration: underline; }
   .menu__2 ul {
     padding: 0;
     list-style: none;
@@ -622,6 +629,10 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__3 h2, .menu__3 h3 {
     text-align: center; }
+  .menu__3 h3 {
+    font-weight: lighter; }
+    .menu__3 h3:hover {
+      text-decoration: underline; }
   .menu__3 ul {
     padding: 0;
     list-style: none;
@@ -722,6 +733,10 @@ footer {
       padding: 1% 5% 1% 5%; } }
   .menu__4 h2, .menu__4 h3 {
     text-align: center; }
+  .menu__4 h3 {
+    font-weight: lighter; }
+    .menu__4 h3:hover {
+      text-decoration: underline; }
   .menu__4 ul {
     padding: 0;
     list-style: none;
