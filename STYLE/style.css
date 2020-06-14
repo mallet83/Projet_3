@@ -19,7 +19,7 @@ a {
   src: url(font/dancing-script.ttf); }
 @font-face {
   font-family: "kaushanscript-regular";
-  src: url(font/kaushanscript-regular.ttf); }
+  src: url(fontkaushanscript-regular.ttf); }
 /* style */
 /* Index Layout */
 body {
@@ -282,7 +282,8 @@ main {
       overflow: hidden;
       display: inline-block;
       vertical-align: bottom;
-      animation: ellipsis steps(4, end) 1100ms infinite;
+      -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+      animation: ellipsis steps(4, end) 900ms infinite;
       content: "…";
       width: 0px; }
 @keyframes ellipsis {
