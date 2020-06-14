@@ -282,8 +282,7 @@ main {
       overflow: hidden;
       display: inline-block;
       vertical-align: bottom;
-      -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-      animation: ellipsis steps(4, end) 900ms infinite;
+      animation: ellipsis steps(4, end) 1100ms infinite;
       content: "…";
       width: 0px; }
 @keyframes ellipsis {
