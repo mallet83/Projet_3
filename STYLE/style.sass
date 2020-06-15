@@ -17,7 +17,7 @@ a
   src: url(font/dancing-script.ttf)
 @font-face
   font-family: 'kaushanscript-regular'
-  src: url(fontkaushanscript-regular.ttf)
+  src: url(font/kaushanscript-regular.ttf)
 $site-color: #569c87
 $site-font-color: #fcca45
 /* style */
@@ -31,7 +31,10 @@ $site-font-color: #fcca45
   width: 0px
   @keyframes ellipsis
     to
-      width: 1.25em
+      width: 20px
+  @-webkit-keyframes ellipsis
+    to
+      width: 20px
 @mixin wiggle
     animation: shake 0.5s
     animation-iteration-count: infinite
@@ -124,26 +127,28 @@ $site-font-color: #fcca45
   font-family: 'montserrat'
   background-color: #569c87
   color: #fcca45
-@mixin button-theme
+@mixin btn_properties
+  text-align: center
+  display: flex
   @include site-theme
   padding: 2% 5% 2% 5%
   border-radius: 10px
-  border: inherit
+  border: 0
   @media only screen and (min-width: 1100px)
-    width: 30%
     font-size: 22px
+    width: 315px
     margin: 1% 35% 9% 35%
   @media only screen and (min-width: 700px) and (max-width: 1100px)
-    width: 40%
+    width: 245px
     margin: 0 30% 13% 30%
     font-size: 20px
   @media only screen and (max-width: 700px) and (min-width: 400px)
     font-size: 18px
-    width: 50%
+    width: 190px
     margin: 0 25% 15% 25%
   @media only screen and (max-width: 400px) and (min-width: 300px)
     font-size: 16px
-    width: 60%
+    width: 170px
     margin: 0 20% 15% 20%
 @mixin radient_webkit
   -webkit-background-clip: text
@@ -208,11 +213,12 @@ main
   .main__card4
     @include card-properties
     @include card4_theme
-  .main--btn
-    @include site-theme
-    @include button-theme
-    &:after
-      @include animated_points
+
+button
+  @include btn_properties
+  @include site-theme
+  &:after
+    @include animated_points
 footer
   overflow: hidden
   position: fixed
