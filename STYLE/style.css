@@ -268,19 +268,19 @@ button {
       margin: 1% 35% 9% 35%; } }
   @media only screen and (min-width: 700px) and (max-width: 1100px) {
     button {
-      width: 245px;
-      margin: 0 30% 13% 30%;
+      width: 270px;
+      margin: 0 30% 13% 33%;
       font-size: 20px; } }
   @media only screen and (max-width: 700px) and (min-width: 400px) {
     button {
       font-size: 18px;
-      width: 190px;
+      width: 195px;
       margin: 0 25% 15% 25%; } }
   @media only screen and (max-width: 400px) and (min-width: 300px) {
     button {
       font-size: 16px;
       width: 170px;
-      margin: 0 20% 15% 20%; } }
+      margin: 0 20% 15% 28%; } }
   button:after {
     overflow: hidden;
     display: inline-block;
