@@ -50,7 +50,8 @@ main {
       opacity: 0.5; }
     main .main__card1:hover a {
       transform: scale(1.2);
-      transform-origin: 50% 50%; }
+      transform-origin: 50% 50%;
+      transition-duration: 1s; }
     @media only screen and (min-width: 300px) {
       main .main__card1 {
         width: 46%;
@@ -102,7 +103,8 @@ main {
       opacity: 0.5; }
     main .main__card2:hover a {
       transform: scale(1.2);
-      transform-origin: 50% 50%; }
+      transform-origin: 50% 50%;
+      transition-duration: 1s; }
     @media only screen and (min-width: 300px) {
       main .main__card2 {
         width: 46%;
@@ -153,7 +155,8 @@ main {
       opacity: 0.5; }
     main .main__card3:hover a {
       transform: scale(1.2);
-      transform-origin: 50% 50%; }
+      transform-origin: 50% 50%;
+      transition-duration: 1s; }
     @media only screen and (min-width: 300px) {
       main .main__card3 {
         width: 46%;
@@ -204,7 +207,8 @@ main {
       opacity: 0.5; }
     main .main__card4:hover a {
       transform: scale(1.2);
-      transform-origin: 50% 50%; }
+      transform-origin: 50% 50%;
+      transition-duration: 1s; }
     @media only screen and (min-width: 300px) {
       main .main__card4 {
         width: 46%;
@@ -264,7 +268,7 @@ button {
   @media only screen and (min-width: 1100px) {
     button {
       font-size: 22px;
-      width: 315px;
+      width: 320px;
       margin: 1% 35% 9% 35%; } }
   @media only screen and (min-width: 700px) and (max-width: 1100px) {
     button {
@@ -281,12 +285,14 @@ button {
       font-size: 16px;
       width: 170px;
       margin: 0 20% 15% 28%; } }
+  button:hover {
+    transform: scale(1.15); }
   button:after {
     overflow: hidden;
     display: inline-block;
     vertical-align: bottom;
-    -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-    animation: ellipsis steps(4, end) 900ms infinite;
+    -webkit-animation: ellipsis steps(4, end) 1200ms infinite;
+    animation: ellipsis steps(4, end) 1200ms infinite;
     content: "…";
     width: 0px; }
 @keyframes ellipsis {
@@ -354,7 +360,6 @@ footer {
   font-family: "babiol";
   background-color: #fcdfdb;
   display: flex;
-  flex-grow: 2;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
@@ -388,8 +393,6 @@ footer {
     text-align: center; }
   .menu__1 h3 {
     font-weight: lighter; }
-    .menu__1 h3:hover {
-      text-decoration: underline; }
   .menu__1 ul {
     padding: 0;
     list-style: none;
@@ -457,26 +460,47 @@ footer {
     @media screen and (min-width: 1100px) {
       .menu__1 h2 {
         font-size: 50px; } }
-  .menu__1 h3 {
-    font-size: 25px; }
+  .menu__1 .hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    position: relative; }
+    .menu__1 .hover:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: black;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0; }
+    .menu__1 .hover:hover:after {
+      width: 100%;
+      left: 0;
+      font-size: 25px; }
     @media screen and (min-width: 700px) {
-      .menu__1 h3 {
+      .menu__1 .hover {
         font-size: 35px; } }
     @media screen and (min-width: 1100px) {
-      .menu__1 h3 {
+      .menu__1 .hover {
         font-size: 45px; } }
-  @media screen and (min-width: 400px) {
-    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-      width: 30%;
-      padding-top: 8px; } }
-  @media screen and (min-width: 700px) {
-    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-      width: 30%;
-      padding-top: 10px; } }
-  @media screen and (min-width: 1100px) {
-    .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-      width: 35%;
-      padding-top: 10px; } }
+  .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+    display: flex; }
+    @media screen and (min-width: 400px) {
+      .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+        width: 30%;
+        padding-top: 8px; } }
+    @media screen and (min-width: 700px) {
+      .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+        width: 300px;
+        height: 20px; } }
+    @media screen and (min-width: 1100px) {
+      .menu__1 .title_bar_left, .menu__1 .title_bar_right {
+        height: 30px; } }
+  .menu__1 .hover:hover {
+    cursor: pointer; }
   @media screen and (min-width: 300px) {
     .menu__1 ul {
       font-size: 20px; } }
@@ -506,7 +530,6 @@ footer {
   font-family: "croissantone-regular";
   background-color: #fff5fe;
   display: flex;
-  flex-grow: 2;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
@@ -539,8 +562,6 @@ footer {
     text-align: center; }
   .menu__2 h3 {
     font-weight: lighter; }
-    .menu__2 h3:hover {
-      text-decoration: underline; }
   .menu__2 ul {
     padding: 0;
     list-style: none;
@@ -607,7 +628,6 @@ footer {
 
 .menu__3 {
   display: flex;
-  flex-grow: 2;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
@@ -627,8 +647,6 @@ footer {
     text-align: center; }
   .menu__3 h3 {
     font-weight: lighter; }
-    .menu__3 h3:hover {
-      text-decoration: underline; }
   .menu__3 ul {
     padding: 0;
     list-style: none;
@@ -711,7 +729,6 @@ footer {
 
 .menu__4 {
   display: flex;
-  flex-grow: 2;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
   -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
@@ -731,8 +748,6 @@ footer {
     text-align: center; }
   .menu__4 h3 {
     font-weight: lighter; }
-    .menu__4 h3:hover {
-      text-decoration: underline; }
   .menu__4 ul {
     padding: 0;
     list-style: none;

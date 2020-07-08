@@ -20,13 +20,20 @@ a
   src: url(font/kaushanscript-regular.ttf)
 $site-color: #569c87
 $site-font-color: #fcca45
+$menu2_gold: #c97b1f
+$menu2_purple: #a96d9d
+$menu2_blue: #7250cd
+$menu3_blue: #0887fb
+$menu4_green: #72bf56
 /* style */
+@mixin hover_title_menu1
+
 @mixin animated_points
   overflow: hidden
   display: inline-block
   vertical-align: bottom
-  -webkit-animation: ellipsis steps(4,end) 900ms infinite
-  animation: ellipsis steps(4,end) 900ms infinite
+  -webkit-animation: ellipsis steps(4,end) 1200ms infinite
+  animation: ellipsis steps(4,end) 1200ms infinite
   content: "\2026"
   width: 0px
   @keyframes ellipsis
@@ -97,7 +104,7 @@ $site-font-color: #fcca45
   background-color: #eeefef
   h1
     font-size: 30px
-    color: #0887fb
+    color: $menu3_blue
     @media only screen and (max-width: 1100px) and (min-width: 700px)
       font-size: 40px
   h2
@@ -113,7 +120,7 @@ $site-font-color: #fcca45
   h1
     font-size: 25px
     font-weight: lighter
-    color: #72bf56
+    color: $menu4_green
     @media only screen and (max-width: 1100px) and (min-width: 700px)
       font-size: 40px
   h2
@@ -136,7 +143,7 @@ $site-font-color: #fcca45
   border: 0
   @media only screen and (min-width: 1100px)
     font-size: 22px
-    width: 315px
+    width: 320px
     margin: 1% 35% 9% 35%
   @media only screen and (min-width: 700px) and (max-width: 1100px)
     width: 270px
@@ -161,6 +168,7 @@ $site-font-color: #fcca45
             &:hover a
               transform: scale(1.2)
               transform-origin: 50% 50%
+              transition-duration: 1s
             @media only screen and (min-width: 300px)
               width: 46%
               height: 200px
@@ -213,10 +221,11 @@ main
   .main__card4
     @include card-properties
     @include card4_theme
-
 button
   @include btn_properties
   @include site-theme
+  &:hover
+    transform: scale(1.15)
   &:after
     @include animated_points
 footer
@@ -245,7 +254,6 @@ footer
 /* layout */
 @mixin menu-properties
   display: flex
-  flex-grow: 2
   flex-direction: column
   -webkit-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
   -moz-box-shadow: 0px 0px 7px 11px rgba(242, 242, 242, 1)
@@ -261,8 +269,6 @@ footer
     text-align: center
   h3
     font-weight: lighter
-    &:hover
-      text-decoration: underline
   ul
     padding: 0
     list-style: none
@@ -323,22 +329,45 @@ footer
       font-size: 40px
     @media screen and (min-width: 1100px)
       font-size: 50px
-  h3
-    font-size: 25px
+  .hover
+    text-transform: uppercase
+    text-decoration: none
+    color: black
+    position: relative
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      background: black
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+
+    &:hover:after
+      width: 100%
+      left: 0
+      font-size: 25px
     @media screen and (min-width: 700px)
       font-size: 35px
     @media screen and (min-width: 1100px)
       font-size: 45px
   .title_bar_left, .title_bar_right
+    display: flex
     @media screen and (min-width: 400px)
       width: 30%
       padding-top: 8px
     @media screen and (min-width: 700px)
-      width: 30%
-      padding-top: 10px
+      width: 300px
+      height: 20px
     @media screen and (min-width: 1100px)
-      width: 35%
-      padding-top: 10px
+      height: 30px
+  .hover:hover
+    cursor: pointer
+
+
   ul
     @media screen and (min-width: 300px)
       font-size: 20px
@@ -362,11 +391,11 @@ footer
   @include card2_theme
   @include menu-properties
   .plat
-    color: #a96d9d
+    color: $menu2_purple
   .entree
-    color: #c97b1f
+    color: $menu2_gold
   .dessert
-    color: #7250cd
+    color: $menu2_blue
   h2
     font-size: 25px
     @media screen and (min-width: 700px)
