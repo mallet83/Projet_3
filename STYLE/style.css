@@ -463,8 +463,12 @@ footer {
   .menu__1 .hover {
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
-    position: relative; }
+    position: relative;
+    cursor: pointer; }
+    .menu__1 .hover:hover:after {
+      width: 100%;
+      left: 0;
+      font-size: 25px; }
     .menu__1 .hover:after {
       background: none repeat scroll 0 0 transparent;
       bottom: 0;
@@ -473,13 +477,9 @@ footer {
       height: 2px;
       left: 50%;
       position: absolute;
-      background: black;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0; }
-    .menu__1 .hover:hover:after {
-      width: 100%;
-      left: 0;
-      font-size: 25px; }
+      width: 0;
+      background: black; }
     @media screen and (min-width: 700px) {
       .menu__1 .hover {
         font-size: 35px; } }
@@ -499,8 +499,6 @@ footer {
     @media screen and (min-width: 1100px) {
       .menu__1 .title_bar_left, .menu__1 .title_bar_right {
         height: 30px; } }
-  .menu__1 .hover:hover {
-    cursor: pointer; }
   @media screen and (min-width: 300px) {
     .menu__1 ul {
       font-size: 20px; } }
@@ -620,6 +618,48 @@ footer {
   @media screen and (min-width: 1100px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
       width: 25%; } }
+  .menu__2 .hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer; }
+    .menu__2 .hover:hover:after {
+      width: 100%;
+      left: 0;
+      font-size: 25px; }
+  .menu__2 .hover1:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: #c97b1f; }
+  .menu__2 .hover2:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: #a96d9d; }
+  .menu__2 .hover3:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    background: #7250cd; }
   .menu__2 ul {
     font-size: 17px; }
     @media screen and (min-width: 700px) {
@@ -702,10 +742,30 @@ footer {
       .menu__3 h2 {
         font-size: 45px; } }
   .menu__3 h3 {
-    font-size: 25px; }
+    font-size: 20px; }
     @media screen and (min-width: 700px) {
       .menu__3 h3 {
         font-size: 30px; } }
+  .menu__3 .hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer; }
+    .menu__3 .hover:hover:after {
+      width: 100%;
+      left: 0;
+      font-size: 25px; }
+    .menu__3 .hover:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #0887fb;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0; }
   @media screen and (min-width: 400px) {
     .menu__3 .title_bar_left, .menu__3 .title_bar_right {
       width: 20%;
@@ -808,6 +868,26 @@ footer {
     @media screen and (min-width: 1100px) {
       .menu__4 h3 {
         font-size: 40px; } }
+  .menu__4 .hover {
+    text-transform: uppercase;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer; }
+    .menu__4 .hover:hover:after {
+      width: 100%;
+      left: 0;
+      font-size: 25px; }
+    .menu__4 .hover:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #72bf56;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0; }
   @media screen and (min-width: 400px) {
     .menu__4 .title_bar_left, .menu__4 .title_bar_right {
       width: 22%;

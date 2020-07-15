@@ -26,8 +26,15 @@ $menu2_blue: #7250cd
 $menu3_blue: #0887fb
 $menu4_green: #72bf56
 /* style */
-@mixin hover_title_menu1
-
+@mixin hover-titles
+  text-transform: uppercase
+  text-decoration: none
+  position: relative
+  cursor: pointer
+  &:hover:after
+    width: 100%
+    left: 0
+    font-size: 25px
 @mixin animated_points
   overflow: hidden
   display: inline-block
@@ -330,10 +337,7 @@ footer
     @media screen and (min-width: 1100px)
       font-size: 50px
   .hover
-    text-transform: uppercase
-    text-decoration: none
-    color: black
-    position: relative
+    @include hover-titles
     &:after
       background: none repeat scroll 0 0 transparent
       bottom: 0
@@ -342,14 +346,9 @@ footer
       height: 2px
       left: 50%
       position: absolute
-      background: black
       transition: width 0.3s ease 0s, left 0.3s ease 0s
       width: 0
-
-    &:hover:after
-      width: 100%
-      left: 0
-      font-size: 25px
+      background: black
     @media screen and (min-width: 700px)
       font-size: 35px
     @media screen and (min-width: 1100px)
@@ -364,10 +363,6 @@ footer
       height: 20px
     @media screen and (min-width: 1100px)
       height: 30px
-  .hover:hover
-    cursor: pointer
-
-
   ul
     @media screen and (min-width: 300px)
       font-size: 20px
@@ -413,6 +408,44 @@ footer
       padding-top: 10px
     @media screen and (min-width: 1100px)
       width: 25%
+  .hover
+    @include hover-titles
+  .hover1
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+      background: $menu2_gold
+  .hover2
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+      background: $menu2_purple
+  .hover3
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
+      background: $menu2_blue
   ul
     font-size: 17px
     @media screen and (min-width: 700px)
@@ -427,9 +460,22 @@ footer
     @media screen and (min-width: 1100px)
       font-size: 45px
   h3
-    font-size: 25px
+    font-size: 20px
     @media screen and (min-width: 700px)
       font-size: 30px
+  .hover
+    @include hover-titles
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      background: $menu3_blue
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
   .title_bar_left, .title_bar_right
     @media screen and (min-width: 400px)
       width: 20%
@@ -459,7 +505,19 @@ footer
       font-size: 30px
     @media screen and (min-width: 1100px)
       font-size: 40px
-
+  .hover
+    @include hover-titles
+    &:after
+      background: none repeat scroll 0 0 transparent
+      bottom: 0
+      content: ""
+      display: block
+      height: 2px
+      left: 50%
+      position: absolute
+      background: $menu4_green
+      transition: width 0.3s ease 0s, left 0.3s ease 0s
+      width: 0
   .title_bar_left, .title_bar_right
     @media screen and (min-width: 400px)
       width: 22%
