@@ -648,20 +648,18 @@ footer {
   .menu__2 .dessert {
     color: #7250cd; }
   .menu__2 h2 {
-    font-size: 25px; }
-    @media screen and (min-width: 700px) {
-      .menu__2 h2 {
-        font-size: 33px; } }
+    font-size: 30px; }
   .menu__2 h3 {
     font-size: 19px; }
-    @media screen and (min-width: 700px) {
-      .menu__2 h3 {
-        font-size: 21px; } }
-  @media screen and (min-width: 400px) {
+  @media screen and (min-width: 400px) and (max-width: 500px) {
+    .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      width: 10%;
+      padding: 12px 0 0 0; } }
+  @media screen and (min-width: 500px) and (max-width: 700px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
       width: 15%;
-      padding: 12px 0 0 0; } }
-  @media screen and (min-width: 700px) {
+      padding: 10px 0 0 0; } }
+  @media screen and (min-width: 700px) and (max-width: 1100px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
       width: 20%;
       padding-top: 10px; } }
@@ -778,18 +776,9 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
   .menu__3 h2 {
-    font-size: 30px; }
-    @media screen and (min-width: 700px) {
-      .menu__3 h2 {
-        font-size: 40px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__3 h2 {
-        font-size: 45px; } }
+    font-size: 40px; }
   .menu__3 h3 {
     font-size: 20px; }
-    @media screen and (min-width: 700px) {
-      .menu__3 h3 {
-        font-size: 30px; } }
   .menu__3 .hover {
     text-transform: uppercase;
     text-decoration: none;
@@ -895,17 +884,8 @@ footer {
     -webkit-text-fill-color: transparent; }
   .menu__4 h2 {
     font-size: 30px; }
-    @media screen and (min-width: 700px) {
-      .menu__4 h2 {
-        font-size: 50px; } }
   .menu__4 h3 {
     font-size: 20px; }
-    @media screen and (min-width: 700px) {
-      .menu__4 h3 {
-        font-size: 30px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__4 h3 {
-        font-size: 40px; } }
   .menu__4 .hover {
     text-transform: uppercase;
     text-decoration: none;
