@@ -43,6 +43,9 @@ main {
   display: flex;
   flex-wrap: wrap; }
   main .main__card1 {
+    -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    box-shadow: 0px 0px 7px 5px #f2f2f2;
     text-align: center;
     font-family: "babiol";
     background-color: #fcdfdb; }
@@ -52,27 +55,42 @@ main {
       transform: scale(1.2);
       transform-origin: 50% 50%;
       transition-duration: 1s; }
-    @media only screen and (min-width: 300px) {
+    @media only screen and (min-width: 300px) and (max-width: 400px) {
       main .main__card1 {
         width: 46%;
         height: 200px;
         padding-top: 50px;
-        margin: 1% 2% 8% 2%;
-        -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        box-shadow: 0px 0px 7px 5px #f2f2f2; } }
-    @media only screen and (min-width: 400px) {
+        margin: 1% 2% 8% 2%; } }
+    @media only screen and (min-width: 400px) and (max-width: 550px) {
       main .main__card1 {
         width: 40%;
         height: 200px;
-        margin: 1% 5% 6% 5%;
-        -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-    @media only screen and (min-width: 700px) and (max-width: 1100px) {
+        padding-top: 50px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 550px) and (max-width: 650px) {
       main .main__card1 {
-        height: 300px;
-        padding-top: 150px; } }
+        width: 40%;
+        height: 220px;
+        padding-top: 80px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 650px) and (max-width: 750px) {
+      main .main__card1 {
+        width: 40%;
+        height: 250px;
+        padding-top: 85px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 750px) and (max-width: 1100px) {
+      main .main__card1 {
+        width: 30%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 2% 5% 1%; } }
+    @media only screen and (min-width: 900px) and (max-width: 1100px) {
+      main .main__card1 {
+        width: 23%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 1% 5% 1%; } }
     @media only screen and (min-width: 1100px) {
       main .main__card1 {
         width: 20%;
@@ -81,21 +99,18 @@ main {
         margin: 0 3% 2% 2%; } }
     main .main__card1 h1 {
       font-size: 30px; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card1 h1 {
-          font-size: 40px; } }
     main .main__card1 h2 {
       font-size: 30px;
       line-height: 1px; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card1 h2 {
-          font-size: 40px; } }
     main .main__card1 img {
       width: 10%; }
       @media only screen and (max-width: 1100px) and (min-width: 700px) {
         main .main__card1 img {
           font-size: 50px; } }
   main .main__card2 {
+    -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    box-shadow: 0px 0px 7px 5px #f2f2f2;
     text-align: center;
     font-family: "croissantone-regular";
     background-color: #fff5fe; }
@@ -105,27 +120,42 @@ main {
       transform: scale(1.2);
       transform-origin: 50% 50%;
       transition-duration: 1s; }
-    @media only screen and (min-width: 300px) {
+    @media only screen and (min-width: 300px) and (max-width: 400px) {
       main .main__card2 {
         width: 46%;
         height: 200px;
         padding-top: 50px;
-        margin: 1% 2% 8% 2%;
-        -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        box-shadow: 0px 0px 7px 5px #f2f2f2; } }
-    @media only screen and (min-width: 400px) {
+        margin: 1% 2% 8% 2%; } }
+    @media only screen and (min-width: 400px) and (max-width: 550px) {
       main .main__card2 {
         width: 40%;
         height: 200px;
-        margin: 1% 5% 6% 5%;
-        -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-    @media only screen and (min-width: 700px) and (max-width: 1100px) {
+        padding-top: 50px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 550px) and (max-width: 650px) {
       main .main__card2 {
-        height: 300px;
-        padding-top: 150px; } }
+        width: 40%;
+        height: 220px;
+        padding-top: 80px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 650px) and (max-width: 750px) {
+      main .main__card2 {
+        width: 40%;
+        height: 250px;
+        padding-top: 85px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 750px) and (max-width: 1100px) {
+      main .main__card2 {
+        width: 30%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 2% 5% 1%; } }
+    @media only screen and (min-width: 900px) and (max-width: 1100px) {
+      main .main__card2 {
+        width: 23%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 1% 5% 1%; } }
     @media only screen and (min-width: 1100px) {
       main .main__card2 {
         width: 20%;
@@ -135,19 +165,16 @@ main {
     main .main__card2 h1 {
       font-size: 25px;
       color: #c77410; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card2 h1 {
-          font-size: 40px; } }
     main .main__card2 h2 {
       font-size: 21px;
       background: #c67411;
       background: linear-gradient(141deg, #c67411 0%, #b7814d 25%, #a56699 50%, #8c5ab0 75%, #6e4ccc 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card2 h2 {
-          font-size: 25px; } }
   main .main__card3 {
+    -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    box-shadow: 0px 0px 7px 5px #f2f2f2;
     text-align: center;
     font-family: "dancingscript";
     background-color: #eeefef; }
@@ -157,27 +184,42 @@ main {
       transform: scale(1.2);
       transform-origin: 50% 50%;
       transition-duration: 1s; }
-    @media only screen and (min-width: 300px) {
+    @media only screen and (min-width: 300px) and (max-width: 400px) {
       main .main__card3 {
         width: 46%;
         height: 200px;
         padding-top: 50px;
-        margin: 1% 2% 8% 2%;
-        -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        box-shadow: 0px 0px 7px 5px #f2f2f2; } }
-    @media only screen and (min-width: 400px) {
+        margin: 1% 2% 8% 2%; } }
+    @media only screen and (min-width: 400px) and (max-width: 550px) {
       main .main__card3 {
         width: 40%;
         height: 200px;
-        margin: 1% 5% 6% 5%;
-        -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-    @media only screen and (min-width: 700px) and (max-width: 1100px) {
+        padding-top: 50px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 550px) and (max-width: 650px) {
       main .main__card3 {
-        height: 300px;
-        padding-top: 150px; } }
+        width: 40%;
+        height: 220px;
+        padding-top: 80px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 650px) and (max-width: 750px) {
+      main .main__card3 {
+        width: 40%;
+        height: 250px;
+        padding-top: 85px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 750px) and (max-width: 1100px) {
+      main .main__card3 {
+        width: 30%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 2% 5% 1%; } }
+    @media only screen and (min-width: 900px) and (max-width: 1100px) {
+      main .main__card3 {
+        width: 23%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 1% 5% 1%; } }
     @media only screen and (min-width: 1100px) {
       main .main__card3 {
         width: 20%;
@@ -187,19 +229,16 @@ main {
     main .main__card3 h1 {
       font-size: 30px;
       color: #0887fb; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card3 h1 {
-          font-size: 40px; } }
     main .main__card3 h2 {
       font-size: 25px;
       background: #0029dd;
       background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card3 h2 {
-          font-size: 40px; } }
   main .main__card4 {
+    -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
+    box-shadow: 0px 0px 7px 5px #f2f2f2;
     text-align: center;
     background-color: #fdfffd;
     font-family: "kaushanscript-regular"; }
@@ -209,27 +248,42 @@ main {
       transform: scale(1.2);
       transform-origin: 50% 50%;
       transition-duration: 1s; }
-    @media only screen and (min-width: 300px) {
+    @media only screen and (min-width: 300px) and (max-width: 400px) {
       main .main__card4 {
         width: 46%;
         height: 200px;
         padding-top: 50px;
-        margin: 1% 2% 8% 2%;
-        -webkit-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 5px #f2f2f2;
-        box-shadow: 0px 0px 7px 5px #f2f2f2; } }
-    @media only screen and (min-width: 400px) {
+        margin: 1% 2% 8% 2%; } }
+    @media only screen and (min-width: 400px) and (max-width: 550px) {
       main .main__card4 {
         width: 40%;
         height: 200px;
-        margin: 1% 5% 6% 5%;
-        -webkit-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        -moz-box-shadow: 0px 0px 7px 11px #f2f2f2;
-        box-shadow: 0px 0px 7px 11px #f2f2f2; } }
-    @media only screen and (min-width: 700px) and (max-width: 1100px) {
+        padding-top: 50px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 550px) and (max-width: 650px) {
       main .main__card4 {
-        height: 300px;
-        padding-top: 150px; } }
+        width: 40%;
+        height: 220px;
+        padding-top: 80px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 650px) and (max-width: 750px) {
+      main .main__card4 {
+        width: 40%;
+        height: 250px;
+        padding-top: 85px;
+        margin: 1% 5% 8% 5%; } }
+    @media only screen and (min-width: 750px) and (max-width: 1100px) {
+      main .main__card4 {
+        width: 30%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 2% 5% 1%; } }
+    @media only screen and (min-width: 900px) and (max-width: 1100px) {
+      main .main__card4 {
+        width: 23%;
+        height: 250px;
+        padding-top: 50px;
+        margin: 1% 1% 5% 1%; } }
     @media only screen and (min-width: 1100px) {
       main .main__card4 {
         width: 20%;
@@ -240,18 +294,12 @@ main {
       font-size: 25px;
       font-weight: lighter;
       color: #72bf56; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card4 h1 {
-          font-size: 40px; } }
     main .main__card4 h2 {
       font-size: 23px;
       background: #5aab48;
       background: linear-gradient(141deg, #5aab48 0%, #a9ed74 50%, #beff7f 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent; }
-      @media only screen and (max-width: 1100px) and (min-width: 700px) {
-        main .main__card4 h2 {
-          font-size: 35px; } }
 
 button {
   text-align: center;
@@ -265,28 +313,41 @@ button {
   font-family: "montserrat";
   background-color: #569c87;
   color: #fcca45; }
-  @media only screen and (min-width: 1100px) {
+  @media only screen and (min-width: 1400px) {
     button {
-      font-size: 22px;
-      width: 320px;
-      margin: 1% 35% 9% 35%; } }
-  @media only screen and (min-width: 700px) and (max-width: 1100px) {
-    button {
-      width: 270px;
-      margin: 0 30% 13% 33%;
-      font-size: 20px; } }
-  @media only screen and (max-width: 700px) and (min-width: 400px) {
-    button {
+      width: 21%;
       font-size: 18px;
-      width: 195px;
-      margin: 0 25% 15% 25%; } }
+      margin: 1% 39% 9% 39%; } }
+  @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    button {
+      width: 23%;
+      font-size: 17px;
+      margin: 1% 38% 9% 38%; } }
+  @media only screen and (min-width: 750px) and (max-width: 1000px) {
+    button {
+      font-size: 17px;
+      width: 29%;
+      margin: 1% 32% 9% 32%; } }
+  @media only screen and (min-width: 600px) and (max-width: 750px) {
+    button {
+      font-size: 17px;
+      width: 34%;
+      margin: 1% 32% 9% 32%; } }
+  @media only screen and (min-width: 500px) and (max-width: 600px) {
+    button {
+      width: 40%;
+      margin: 0 30% 13% 30%;
+      font-size: 16px; } }
+  @media only screen and (max-width: 500px) and (min-width: 400px) {
+    button {
+      font-size: 16px;
+      width: 45%;
+      margin: 0 27% 15% 27%; } }
   @media only screen and (max-width: 400px) and (min-width: 300px) {
     button {
       font-size: 16px;
-      width: 170px;
-      margin: 0 20% 15% 28%; } }
-  button:hover {
-    transform: scale(1.15); }
+      width: 50%;
+      margin: 0 25% 15% 25%; } }
   button:after {
     overflow: hidden;
     display: inline-block;
@@ -368,15 +429,9 @@ footer {
   margin: 5% 1% 10% 1%; }
   .menu__1 h1 {
     font-size: 30px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__1 h1 {
-        font-size: 40px; } }
   .menu__1 h2 {
     font-size: 30px;
     line-height: 1px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__1 h2 {
-        font-size: 40px; } }
   .menu__1 img {
     width: 10%; }
     @media only screen and (max-width: 1100px) and (min-width: 700px) {
@@ -482,10 +537,10 @@ footer {
       background: black; }
     @media screen and (min-width: 700px) {
       .menu__1 .hover {
-        font-size: 35px; } }
+        font-size: 25px; } }
     @media screen and (min-width: 1100px) {
       .menu__1 .hover {
-        font-size: 45px; } }
+        font-size: 35px; } }
   .menu__1 .title_bar_left, .menu__1 .title_bar_right {
     display: flex; }
     @media screen and (min-width: 400px) {
@@ -494,11 +549,12 @@ footer {
         padding-top: 8px; } }
     @media screen and (min-width: 700px) {
       .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-        width: 300px;
+        width: 35%;
         height: 20px; } }
     @media screen and (min-width: 1100px) {
       .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-        height: 30px; } }
+        height: 30px;
+        width: 35%; } }
   @media screen and (min-width: 300px) {
     .menu__1 ul {
       font-size: 20px; } }
@@ -537,18 +593,12 @@ footer {
   .menu__2 h1 {
     font-size: 25px;
     color: #c77410; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__2 h1 {
-        font-size: 40px; } }
   .menu__2 h2 {
     font-size: 21px;
     background: #c67411;
     background: linear-gradient(141deg, #c67411 0%, #b7814d 25%, #a56699 50%, #8c5ab0 75%, #6e4ccc 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__2 h2 {
-        font-size: 25px; } }
   @media only screen and (min-width: 700px) {
     .menu__2 {
       margin: 5% 3% 14% 3%; } }
@@ -721,18 +771,12 @@ footer {
   .menu__3 h1 {
     font-size: 30px;
     color: #0887fb; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__3 h1 {
-        font-size: 40px; } }
   .menu__3 h2 {
     font-size: 25px;
     background: #0029dd;
     background: linear-gradient(141deg, #0029dd 0%, #056af2 50%, #0789fb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__3 h2 {
-        font-size: 40px; } }
   .menu__3 h2 {
     font-size: 30px; }
     @media screen and (min-width: 700px) {
@@ -843,18 +887,12 @@ footer {
     font-size: 25px;
     font-weight: lighter;
     color: #72bf56; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__4 h1 {
-        font-size: 40px; } }
   .menu__4 h2 {
     font-size: 23px;
     background: #5aab48;
     background: linear-gradient(141deg, #5aab48 0%, #a9ed74 50%, #beff7f 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__4 h2 {
-        font-size: 35px; } }
   .menu__4 h2 {
     font-size: 30px; }
     @media screen and (min-width: 700px) {
