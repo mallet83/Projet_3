@@ -483,9 +483,6 @@ footer {
     font-size: 40px;
     line-height: 1px;
     padding-top: 30px; }
-    @media only screen and (max-width: 1100px) and (min-width: 700px) {
-      .menu__1 .header_title {
-        font-size: 50px; } }
   .menu__1 .note_header {
     display: block;
     margin-left: auto;
@@ -512,9 +509,6 @@ footer {
     @media screen and (min-width: 700px) {
       .menu__1 h2 {
         font-size: 40px; } }
-    @media screen and (min-width: 1100px) {
-      .menu__1 h2 {
-        font-size: 50px; } }
   .menu__1 .hover {
     text-transform: uppercase;
     text-decoration: none;
@@ -550,10 +544,10 @@ footer {
     @media screen and (min-width: 700px) {
       .menu__1 .title_bar_left, .menu__1 .title_bar_right {
         width: 35%;
-        height: 20px; } }
+        height: 13px; } }
     @media screen and (min-width: 1100px) {
       .menu__1 .title_bar_left, .menu__1 .title_bar_right {
-        height: 30px;
+        height: 20px;
         width: 35%; } }
   @media screen and (min-width: 300px) {
     .menu__1 ul {
@@ -561,9 +555,6 @@ footer {
   @media screen and (min-width: 700px) {
     .menu__1 ul {
       font-size: 25px; } }
-  @media screen and (min-width: 1100px) {
-    .menu__1 ul {
-      font-size: 30px; } }
   @media screen and (min-width: 300px) {
     .menu__1 .footer_title {
       font-size: 28px; } }
@@ -653,19 +644,28 @@ footer {
     font-size: 19px; }
   @media screen and (min-width: 400px) and (max-width: 500px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
-      width: 10%;
+      height: 6px;
+      width: 11%;
       padding: 12px 0 0 0; } }
   @media screen and (min-width: 500px) and (max-width: 700px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      height: 7px;
       width: 15%;
       padding: 10px 0 0 0; } }
-  @media screen and (min-width: 700px) and (max-width: 1100px) {
+  @media screen and (min-width: 700px) and (max-width: 900px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      height: 8px;
       width: 20%;
       padding-top: 10px; } }
+  @media screen and (min-width: 900px) and (max-width: 1100px) {
+    .menu__2 .title_bar_left, .menu__2 .title_bar_right {
+      height: 8px;
+      width: 27%;
+      padding-top: 8px; } }
   @media screen and (min-width: 1100px) {
     .menu__2 .title_bar_left, .menu__2 .title_bar_right {
-      width: 25%; } }
+      width: 30%;
+      height: 12px; } }
   .menu__2 .hover {
     text-transform: uppercase;
     text-decoration: none;
@@ -709,10 +709,7 @@ footer {
     width: 0;
     background: #7250cd; }
   .menu__2 ul {
-    font-size: 17px; }
-    @media screen and (min-width: 700px) {
-      .menu__2 ul {
-        font-size: 19px; } }
+    font-size: 16px; }
 
 .menu__3 {
   display: flex;
@@ -812,13 +809,7 @@ footer {
       width: 30%;
       padding-top: 10px; } }
   .menu__3 ul {
-    font-size: 19px; }
-    @media screen and (min-width: 400px) {
-      .menu__3 ul {
-        font-size: 22px; } }
-    @media screen and (min-width: 700px) {
-      .menu__3 ul {
-        font-size: 30px; } }
+    font-size: 22px; }
 
 .menu__4 {
   display: flex;

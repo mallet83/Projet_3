@@ -321,8 +321,6 @@ footer
     font-size: 40px
     line-height: 1px
     padding-top: 30px
-    @media only screen and (max-width: 1100px) and (min-width: 700px)
-      font-size: 50px
   .note_header
     display: block
     margin-left: auto
@@ -345,8 +343,6 @@ footer
     font-size: 30px
     @media screen and (min-width: 700px)
       font-size: 40px
-    @media screen and (min-width: 1100px)
-      font-size: 50px
   .hover
     @include hover-titles
     &:after
@@ -371,17 +367,15 @@ footer
       padding-top: 8px
     @media screen and (min-width: 700px)
       width: 35%
-      height: 20px
+      height: 13px
     @media screen and (min-width: 1100px)
-      height: 30px
+      height: 20px
       width: 35%
   ul
     @media screen and (min-width: 300px)
       font-size: 20px
     @media screen and (min-width: 700px)
       font-size: 25px
-    @media screen and (min-width: 1100px)
-      font-size: 30px
   .footer_title
     @media screen and (min-width: 300px)
       font-size: 28px
@@ -409,16 +403,24 @@ footer
     font-size: 19px
   .title_bar_left, .title_bar_right
     @media screen and (min-width: 400px) and (max-width: 500px)
-      width: 10%
+      height: 6px
+      width: 11%
       padding: 12px 0 0 0
     @media screen and (min-width: 500px) and (max-width: 700px)
+      height: 7px
       width: 15%
       padding: 10px 0 0 0
-    @media screen and (min-width: 700px) and (max-width: 1100px)
+    @media screen and (min-width: 700px) and (max-width: 900px)
+      height: 8px
       width: 20%
       padding-top: 10px
+    @media screen and (min-width: 900px) and (max-width: 1100px)
+      height: 8px
+      width: 27%
+      padding-top: 8px
     @media screen and (min-width: 1100px)
-      width: 25%
+      width: 30%
+      height: 12px
   .hover
     @include hover-titles
   .hover1
@@ -458,9 +460,7 @@ footer
       width: 0
       background: $menu2_blue
   ul
-    font-size: 17px
-    @media screen and (min-width: 700px)
-      font-size: 19px
+    font-size: 16px
 .menu__3
   @include menu-properties
   @include card3_theme
@@ -492,11 +492,7 @@ footer
       width: 30%
       padding-top: 10px
   ul
-    font-size: 19px
-    @media screen and (min-width: 400px)
-      font-size: 22px
-    @media screen and (min-width: 700px)
-      font-size: 30px
+    font-size: 22px
 .menu__4
   @include menu-properties
   @include card4_theme
