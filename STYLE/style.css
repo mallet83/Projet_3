@@ -7,19 +7,19 @@ a {
 
 @font-face {
   font-family: "babiol";
-  src: url(STYLE/font/babie___.ttf); }
+  src: url(./font/babie___.ttf); }
 @font-face {
   font-family: "montserrat";
-  src: url(STYLE/font/montserrat-regular.ttf); }
+  src: url(./font/montserrat-regular.ttf); }
 @font-face {
   font-family: "croissantone-regular";
-  src: url(STYLE/font/croissantone-regular.ttf); }
+  src: url(./font/croissantone-regular.ttf); }
 @font-face {
   font-family: "dancingscript";
-  src: url(STYLE/font/dancing-script.ttf); }
+  src: url(./font/dancing-script.ttf); }
 @font-face {
   font-family: "kaushanscript-regular";
-  src: url(STYLE/font/kaushanscript-regular.ttf); }
+  src: url(./font/kaushanscript-regular.ttf); }
 /* style */
 /* Index Layout */
 body {
